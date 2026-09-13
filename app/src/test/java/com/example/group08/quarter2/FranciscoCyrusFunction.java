@@ -2,14 +2,14 @@ package com.example.group08.quarter2;
 
 import org.junit.Test;
 
-public class FranciscoGabrielleFunction {
+public class FranciscoCyrusFunction {
 
     @Test
     public void printMyProfile() {
 
-        String myName = "Gabrielle";
-        String petName = "Milo";
-        String favFood = "Pesto";
+        String myName = "Cyrus";
+        String petName = "Timer";
+        String favFood = "Nilaga";
         int myAge = 16;
 
         System.out.println("--- MY DIGITAL PROFILE ---");
