@@ -1,11 +1,15 @@
 package com.example.group08.quarter2;
 
 import org.junit.Test;
+
 public class BeloFunction {
 
     @Test
-    public void printMyProfile () {
+    public void printMyProfile() {
+
+        String myName = "Belo";
         String petName = "Meatball";
+        String favFood = "Adobo";
         int myAge = 18;
 
         System.out.println("--- MY DIGITAL PROFILE ---");
