@@ -1,7 +1,6 @@
 package com.example.group08.quarter2.MiniPeta3;
 
-public class Quizzes
-system.out.printIn();
+.out.printIn();
 system.out.printIn("/n answer your quizzes.");
 system.out.printIn("Show Subjects:");
 
