@@ -9,5 +9,6 @@ public class Grades {
         System.out.println("Science: " + science);
         System.out.println("History: " + history);
 
+
     }
 }
