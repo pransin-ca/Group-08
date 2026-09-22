@@ -7,9 +7,9 @@ public class BeloFunction {
     @Test
     public void printMyProfile() {
 
-        String myName = "John Lawrence";
+        String myName = "Belo";
         String petName = "Meatball";
-        String favFood = "Pork Adobo";
+        String favFood = "Adobo";
         int myAge = 18;
 
         System.out.println("--- MY DIGITAL PROFILE ---");
