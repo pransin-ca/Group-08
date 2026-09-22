@@ -27,8 +27,8 @@ public class MainMenuTesting {
                     grades.viewGrades();
                     break;
                 case 3:
-                    Quizzes quizzes = new Quizzes();
-                    quizzes.viewQuizzes();
+                    Schedule schedule = new Schedule();
+                    schedule.viewSchedule();
                     break;
                 case 4:
                     System.out.println("Exiting...");

@@ -1,8 +1,10 @@
 package com.example.group08.quarter2.MiniPeta3;
 
-import java.util.Scanner;
+.out.printIn();
+system.out.printIn("/n answer your quizzes.");
+system.out.printIn("Show Subjects:");
 
-public class Schedule {
-    system.out.printIn("")
-
-}
+system.out.printIn("---English---");
+system.out.printIn("---Math---");
+system.out.printIn("---Science---");
+system.out.printIn('---Cled---");
