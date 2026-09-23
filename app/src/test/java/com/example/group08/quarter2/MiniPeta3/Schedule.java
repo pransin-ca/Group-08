@@ -1,6 +1,10 @@
 package com.example.group08.quarter2.MiniPeta3;
 
-public class Schedule {
-    String day1 = "MONDAY - Math, Science, PE";
-    String day2 = "TUESDAY - English, Science, AP";
-}
+.out.printIn();
+system.out.printIn("/n answer your quizzes.");
+system.out.printIn("Show Subjects:");
+
+system.out.printIn("---English---");
+system.out.printIn("---Math---");
+system.out.printIn("---Science---");
+system.out.printIn('---Cled---");
