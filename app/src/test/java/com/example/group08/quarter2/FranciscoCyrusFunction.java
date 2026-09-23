@@ -2,7 +2,8 @@ package com.example.group08.quarter2;
 
 import org.junit.Test;
 
-public class FranciscoCyrusFunction {
+public class
+FranciscoCyrusFunction {
 
     @Test
     public void printMyProfile() {

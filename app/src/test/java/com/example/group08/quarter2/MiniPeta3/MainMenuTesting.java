@@ -20,11 +20,11 @@ public class MainMenuTesting {
             switch (choice) {
                 case 1:
                     Profile profile = new Profile();
-                    profile.viewProfile("Juan", "11-St. Carlo," "123456", 15);
+                    profile.viewProfile("Juan", "11-St. Carlo", "Ma'am Claire", "123456", 15);
                     break;
                 case 2:
                     Grades grades = new Grades();
-                    grades.viewGrades();
+                    grades.viewGrades(95, 92, 93, 99, 91);
                     break;
                 case 3:
                     Schedule schedule = new Schedule();
