@@ -1,7 +1,5 @@
 package com.example.group08.quarter2.MiniPeta3;
 
-import java.util.Scanner;
-
 public class Profile {
     public void viewProfile(String name, String gradeAndSection, String adviser, String studentID, int age) {
         System.out.println("=== PROFILE ===");
