@@ -2,7 +2,7 @@ package com.example.group08.quarter2;
 
 import org.junit.Test;
 
-public class    CentinajeFunction {
+public class CentinajeFunction {
 
     @Test
     public void printMyProfile() {

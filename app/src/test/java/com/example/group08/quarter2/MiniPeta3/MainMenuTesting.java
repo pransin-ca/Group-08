@@ -2,6 +2,8 @@ package com.example.group08.quarter2.MiniPeta3;
 
 import java.util.Scanner;
 import java.io.ByteArrayInputStream;
+import org.junit.Test;
+
 public class MainMenuTesting {
     public void mainMenu(Scanner input) {
         int choice;
@@ -10,8 +12,9 @@ public class MainMenuTesting {
             System.out.println("=== MENU ===");
             System.out.println("1. Profile");
             System.out.println("2. Grades");
-            System.out.println("3. Quizzes");
-            System.out.println("4. Exit");
+            System.out.println("3. Attendance");
+            System.out.println("4. Gym Access");
+            System.out.println("5. Exit");
 
             System.out.print("Enter choice: ");
             choice = input.nextInt();
@@ -27,24 +30,31 @@ public class MainMenuTesting {
                     grades.viewGrades(95, 92, 93, 99, 91);
                     break;
                 case 3:
-                    Schedule schedule = new Schedule();
-                    schedule.viewSchedule();
+                    Attendance attendance = new Attendance();
+                    attendance.viewAttendance(29, 2, 2);
                     break;
                 case 4:
+                    GymAccess gym = new GymAccess();
+                    gym.checkGymAccess("Juan", "11-St. Carlo", "Ma'am Claire", "123456", true);
+                    break;
+                case 5:
                     System.out.println("Exiting...");
                     break;
                 default:
                     System.out.println("ERROR: Invalid action.");
             }
-        } while (choice != 4);
+        } while (choice != 5);
     }
 
-    public static void main(String[] args) {
+    @Test
+    public void testMainMenu() {
         StringBuilder simulatedUserInput = new StringBuilder();
         simulatedUserInput.append("1\n");
         simulatedUserInput.append("2\n");
         simulatedUserInput.append("3\n");
         simulatedUserInput.append("4\n");
+        simulatedUserInput.append("5\n");
+
 
         System.setIn(new ByteArrayInputStream(simulatedUserInput.toString().getBytes()));
 
