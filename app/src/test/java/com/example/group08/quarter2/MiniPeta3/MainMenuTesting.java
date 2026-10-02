@@ -6,48 +6,57 @@ import org.junit.Test;
 
 public class MainMenuTesting {
     public void mainMenu(Scanner input) {
-        int choice;
+        package com.example.group08.quarter2.MiniPeta3;
 
-        do {
-            System.out.println("=== MENU ===");
-            System.out.println("1. Profile");
-            System.out.println("2. Grades");
-            System.out.println("3. Attendance");
-            System.out.println("4. Gym Access");
-            System.out.println("5. Exit");
+import java.util.Scanner;
+import java.io.ByteArrayInputStream;
+import org.junit.Test;
 
-            System.out.print("Enter choice: ");
-            choice = input.nextInt();
-            System.out.println(choice);
+        public class MainMenuTesting {
+            public void mainMenu(Scanner input) {
+                int choice;
 
-            switch (choice) {
-                case 1:
-                    Profile profile = new Profile();
-                    profile.viewProfile("Juan", "11-St. Carlo", "Ma'am Claire", "123456", 15);
-                    break;
-                case 2:
-                    Grades grades = new Grades();
-                    grades.viewGrades(95, 92, 93, 99, 91);
-                    break;
-                case 3:
-                    Attendance attendance = new Attendance();
-                    attendance.viewAttendance(29, 2, 2);
-                    break;
-                case 4:
-                    GymAccess gym = new GymAccess();
-                    gym.checkGymAccess("Juan", "11-St. Carlo", "Ma'am Claire", "123456", true);
-                    break;
-                case 5:
-                    System.out.println("Exiting...");
-                    break;
-                default:
-                    System.out.println("ERROR: Invalid action.");
+                do {
+                    System.out.println("=== MENU ===");
+                    System.out.println("1. Profile");
+                    System.out.println("2. Grades");
+                    System.out.println("3. Attendance");
+                    System.out.println("4. Gym Access");
+                    System.out.println("5. Exit");
+
+                    System.out.print("Enter choice: ");
+                    choice = input.nextInt();
+                    System.out.println(choice);
+
+                    switch (choice) {
+                        case 1:
+                            Profile profile = new Profile();
+                            profile.viewProfile("Juan", "11-St. Carlo", "Ma'am Claire", "123456", 15);
+                            break;
+                        case 2:
+                            Grades grades = new Grades();
+                            grades.viewGrades(95, 92, 93, 99, 91);
+                            break;
+                        case 3:
+                            Attendance attendance = new Attendance();
+                            attendance.viewAttendance(29, 2, 2);
+                            break;
+                        case 4:
+                            GymAccess gym = new GymAccess();
+                            gym.checkGymAccess("Juan", "11-St. Carlo", "Ma'am Claire", "123456", true);
+                            break;
+                        case 5:
+                            System.out.println("Exiting...");
+                            break;
+                        default:
+                            System.out.println("ERROR: Invalid action.");
+                    }
+                } while (choice != 5);
             }
-        } while (choice != 5);
-    }
 
-    @Test
+            @Test
+
+
     }
 }
-
 
