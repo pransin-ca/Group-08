@@ -1,3 +1,5 @@
+/*** This was made by Belo, John Lawrence. He finished this during class hours. ***/
+
 package com.example.group08.quarter2.MiniPeta3;
 
 public class Profile {
@@ -10,4 +12,3 @@ public class Profile {
         System.out.println("Age: " + age);
     }
 }
-

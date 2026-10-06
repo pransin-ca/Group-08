@@ -1,3 +1,6 @@
+/*** This was made by Francisco, Gabrielle Hannah. She began working on this during class hours.
+ I added the computation part. ***/
+
 package com.example.group08.quarter2.MiniPeta3;
 
 public class Grades {
@@ -27,3 +30,4 @@ public class Grades {
         }
     }
 }
+

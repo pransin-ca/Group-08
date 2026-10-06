@@ -1,39 +1,21 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+/*** This class was made by Francisco, Cyrus James. He was not able to put it manually in Android Studio since
+he does not have a personal computer. ****/
 
-import java.io.ByteArrayInputStream;
-import java.util.Scanner;
+package com.example.group08.quarter2.MiniPeta3;
 
-public class GymAccessTest {
+public class GymAccess {
 
-    @Test
-    public void testGymFlow() {
-        StringBuilder automatedInput = new StringBuilder();
+    public void checkGymAccess(String studentName, String gradeLevel, String section, String studentID, boolean status) {
+        System.out.println("=== GYM ACCESS AND INFORMATION ===");
+        System.out.println("Name: " + studentName);
+        System.out.println("Grade Level: " + gradeLevel);
+        System.out.println("Section: " + section);
+        System.out.println("Student ID: " + studentID);
 
-        System.out.println("--- GENERATING GYM TEST DATA ---");
-
-        // Step 1: Enter gym floor option
-        automatedInput.append("1\n"); // Choose Enter Gym
-
-        // Step 2: Test VIP membership tier (Level 1)
-        automatedInput.append("2\n"); // Choose Hire Trainer
-        automatedInput.append("1\n"); // Enter level 1 (Expected: Trainer Assigned)
-
-        // Step 3: Test Basic membership tier (Level 2)
-        automatedInput.append("2\n"); // Choose Hire Trainer
-        automatedInput.append("2\n"); // Enter level 2 (Expected: Upgrade Required)
-
-        // Step 4: Exit system
-        automatedInput.append("3\n"); // Choose Exit
-
-        System.out.println("--- TEST DATA GENERATION COMPLETE ---\n");
-
-        ByteArrayInputStream inputStream =
-                new ByteArrayInputStream(automatedInput.toString().getBytes());
-
-        Scanner scanner = new Scanner(inputStream);
-
-        GymMenu gymSystem = new GymMenu();
-        gymSystem.start(scanner);
+        if (status) {
+            System.out.println("Status: Access Granted");
+        } else {
+            System.out.println("Status: Access Denied");
+        }
     }
 }
