@@ -1,0 +1,4 @@
+@@ -12,3 +12,4 @@ public void viewProfile(String name, String gradeAndSection, String adviser, Str
+        System.out.println("Age: " + age);
+    }
+}
