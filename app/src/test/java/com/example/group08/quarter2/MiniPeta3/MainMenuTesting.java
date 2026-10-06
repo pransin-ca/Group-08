@@ -9,8 +9,8 @@ public class MainMenuTesting {
         do {
             System.out.println("=== MENU ===");
             System.out.println("1. Profile");
-            System.out.println("2. Grades");
-            System.out.println("3. Quizzes");
+            System.out.println("2. quizzes");
+            System.out.println("3. grades");
             System.out.println("4. Exit");
 
             System.out.print("Enter choice: ");
