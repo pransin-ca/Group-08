@@ -2,8 +2,6 @@ package com.example.group08.quarter2.MiniPeta3;
 
 import java.util.Scanner;
 import java.io.ByteArrayInputStream;
-import org.junit.Test;
-
 public class MainMenuTesting {
     public void mainMenu(Scanner input) {
         int choice;
@@ -11,10 +9,9 @@ public class MainMenuTesting {
         do {
             System.out.println("=== MENU ===");
             System.out.println("1. Profile");
-            System.out.println("2. Grades");
-            System.out.println("3. Attendance");
-            System.out.println("4. Gym Access");
-            System.out.println("5. Exit");
+            System.out.println("2. quizzes");
+            System.out.println("3. grades");
+            System.out.println("4. Exit");
 
             System.out.print("Enter choice: ");
             choice = input.nextInt();
@@ -30,37 +27,30 @@ public class MainMenuTesting {
                     grades.viewGrades(95, 92, 93, 99, 91);
                     break;
                 case 3:
-                    Attendance attendance = new Attendance();
-                    attendance.viewAttendance(29, 2, 2);
+                    Schedule schedule = new Schedule();
+                    schedule.viewSchedule();
                     break;
                 case 4:
-                    GymAccess gym = new GymAccess();
-                    gym.checkGymAccess("Juan", "11-St. Carlo", "Ma'am Claire", "123456", true);
-                    break;
-                case 5:
                     System.out.println("Exiting...");
                     break;
                 default:
                     System.out.println("ERROR: Invalid action.");
             }
-        } while (choice != 5);
+        } while (choice != 4);
     }
 
-    @Test
-    public void testMainMenu() {
-        StringBuilder simulatedUserInput = new StringBuilder();
-        simulatedUserInput.append("1\n");
-        simulatedUserInput.append("2\n");
-        simulatedUserInput.append("3\n");
-        simulatedUserInput.append("4\n");
-        simulatedUserInput.append("5\n");
+    public static void main(String[] args) {
+        String simulatedUserInput = "1\n" +
+                "2\n" +
+                "3\n" +
+                "4\n";
 
-
-        System.setIn(new ByteArrayInputStream(simulatedUserInput.toString().getBytes()));
+        System.setIn(new ByteArrayInputStream(simulatedUserInput.getBytes()));
 
         Scanner input = new Scanner(System.in);
         MainMenuTesting menu = new MainMenuTesting();
         menu.mainMenu(input);
     }
 }
+
 

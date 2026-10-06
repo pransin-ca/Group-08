@@ -21,7 +21,7 @@ public class FastFoodTest {
         System.out.println("--- TEST DATA GENERATION COMPLETE ---\n");
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
-        FastFoodMenu fastFoodSystem = new FastFoodMenu();
+        FastFoodMenuTesting fastFoodSystem = new FastFoodMenuTesting();
         fastFoodSystem.start(scanner);
     }
 }

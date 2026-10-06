@@ -2,7 +2,7 @@ package com.example.group08.quarter2.MiniPeta3.PracticalExam.FastFoodTest;
 
 import java.util.Scanner;
 
-public class FastFoodMenu {
+public class FastFoodMenuTesting {
 
     public void start(Scanner scanner) {
         int choice;
