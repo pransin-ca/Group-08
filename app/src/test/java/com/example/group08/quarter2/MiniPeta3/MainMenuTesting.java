@@ -40,13 +40,12 @@ public class MainMenuTesting {
     }
 
     public static void main(String[] args) {
-        StringBuilder simulatedUserInput = new StringBuilder();
-        simulatedUserInput.append("1\n");
-        simulatedUserInput.append("2\n");
-        simulatedUserInput.append("3\n");
-        simulatedUserInput.append("4\n");
+        String simulatedUserInput = "1\n" +
+                "2\n" +
+                "3\n" +
+                "4\n";
 
-        System.setIn(new ByteArrayInputStream(simulatedUserInput.toString().getBytes()));
+        System.setIn(new ByteArrayInputStream(simulatedUserInput.getBytes()));
 
         Scanner input = new Scanner(System.in);
         MainMenuTesting menu = new MainMenuTesting();
