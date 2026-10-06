@@ -2,7 +2,7 @@ package quarter2.practicalexamsubpackage;
 
 import java.util.Scanner;
 
-public class FastFood {
+class FastFood {
 
     public void start(Scanner scanner) {
 
