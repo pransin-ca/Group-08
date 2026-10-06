@@ -9,8 +9,8 @@ public class MainMenuTesting {
         do {
             System.out.println("=== MENU ===");
             System.out.println("1. Profile");
-            System.out.println("2. Grades");
-            System.out.println("3. Quizzes");
+            System.out.println("2. quizzes");
+            System.out.println("3. grades");
             System.out.println("4. Exit");
 
             System.out.print("Enter choice: ");
@@ -20,11 +20,11 @@ public class MainMenuTesting {
             switch (choice) {
                 case 1:
                     Profile profile = new Profile();
-                    profile.viewProfile("Juan", "11-St. Carlo," "123456", 15);
+                    profile.viewProfile("Juan", "11-St. Carlo", "Ma'am Claire", "123456", 15);
                     break;
                 case 2:
                     Grades grades = new Grades();
-                    grades.viewGrades();
+                    grades.viewGrades(95, 92, 93, 99, 91);
                     break;
                 case 3:
                     Schedule schedule = new Schedule();
@@ -40,13 +40,12 @@ public class MainMenuTesting {
     }
 
     public static void main(String[] args) {
-        StringBuilder simulatedUserInput = new StringBuilder();
-        simulatedUserInput.append("1\n");
-        simulatedUserInput.append("2\n");
-        simulatedUserInput.append("3\n");
-        simulatedUserInput.append("4\n");
+        String simulatedUserInput = "1\n" +
+                "2\n" +
+                "3\n" +
+                "4\n";
 
-        System.setIn(new ByteArrayInputStream(simulatedUserInput.toString().getBytes()));
+        System.setIn(new ByteArrayInputStream(simulatedUserInput.getBytes()));
 
         Scanner input = new Scanner(System.in);
         MainMenuTesting menu = new MainMenuTesting();

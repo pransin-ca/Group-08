@@ -1,3 +1,5 @@
+/*** This was made by Belo, John Lawrence. He finished this during class hours. ***/
+
 package com.example.group08.quarter2.MiniPeta3;
 
 public class Profile {
@@ -6,8 +8,7 @@ public class Profile {
         System.out.println("Name: " + name);
         System.out.println("Grade and Section: " + gradeAndSection);
         System.out.println("Adviser: " + adviser);
-        System.out.println("Student ID: " + studentID);
+        System.out.println("StudentID: " + studentID);
         System.out.println("Age: " + age);
-        System.out.println("=======");
     }
 }
