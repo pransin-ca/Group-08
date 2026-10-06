@@ -3,7 +3,7 @@ package com.example.group08.quarter2.MiniPeta3.PracticalExam.FastFoodTest;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
-public class FastFoodTest {
+public class FastFoodChoicesTest {
     @Test
     public void testFastFoodFlow() {
         StringBuilder automatedInput = new StringBuilder();
