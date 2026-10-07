@@ -9,8 +9,8 @@ public class MainMenuTesting {
         do {
             System.out.println("=== MENU ===");
             System.out.println("1. Profile");
-            System.out.println("2. quizzes");
-            System.out.println("3. grades");
+            System.out.println("2. Attendance");
+            System.out.println("3. Grades");
             System.out.println("4. Exit");
 
             System.out.print("Enter choice: ");
@@ -27,8 +27,8 @@ public class MainMenuTesting {
                     grades.viewGrades(95, 92, 93, 99, 91);
                     break;
                 case 3:
-                    Schedule schedule = new Schedule();
-                    schedule.viewSchedule();
+                    Attendance attendance = new Attendance();
+                    attendance.viewAttendance(20, 10, 5);
                     break;
                 case 4:
                     System.out.println("Exiting...");
