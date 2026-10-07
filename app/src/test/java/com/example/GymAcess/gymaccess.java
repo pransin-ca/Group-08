@@ -24,7 +24,7 @@ public class gymaccess {
         automatedInput.append("1\n");
 
         // Step 2: VIP membership - Level 1
-        automatedInput.append("2\n"); // Choose Hire Trainer
+        automatedInput.append("2\n"); // Vhoose Hire Trainer
         automatedInput.append("1\n"); // Level 1
 
         // Step 3: Basic membership - Level 2
