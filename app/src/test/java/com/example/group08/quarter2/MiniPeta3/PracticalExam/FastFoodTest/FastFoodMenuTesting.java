@@ -35,4 +35,34 @@ public class FastFoodMenuTesting {
 
         } while (choice != 3);
     }
+
+    // This is INSIDE FastFoodMenu
+    private void orderBurger(Scanner scanner) {
+        System.out.println("\n==== BURGER OPTIONS ====");
+        System.out.println("1. Combo - ₱150");
+        System.out.println("2. Solo - ₱100");
+        System.out.print("Enter your choice: ");
+
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println("You ordered a Burger Combo - ₱150");
+                System.out.println("Includes: Burger + Fries + Soft Drink");
+                break;
+
+            case 2:
+                System.out.println("You ordered a Burger Solo - ₱100");
+                System.out.println("Includes: Burger only");
+                break;
+
+            default:
+                System.out.println("Invalid burger option.");
+        }
+    }
+
+    private void orderFries() {
+        System.out.println("\nYou ordered Fries - ₱60");
+        System.out.println("Thank you!");
+    }
 }
