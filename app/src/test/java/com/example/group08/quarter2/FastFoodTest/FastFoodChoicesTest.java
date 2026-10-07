@@ -1,4 +1,4 @@
-package com.example.group08.quarter2.MiniPeta3.PracticalExam.FastFoodTest;
+package com.example.group08.quarter2.FastFoodTest;
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
