@@ -28,18 +28,6 @@
 
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#804000"
-        android:textColorHighlight="#070707"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="218dp"
-        tools:text="Student ID [If Teacher,put email]" />
-
-    <TextView
         android:id="@+id/textView8"
         android:layout_width="334dp"
         android:layout_height="43dp"
@@ -134,5 +122,16 @@
         tools:layout_editor_absoluteX="127dp"
         tools:layout_editor_absoluteY="577dp"
         tools:text="Create Account" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#804000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="226dp"
+        tools:text="Student ID {If Teacher,Put Email}" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
