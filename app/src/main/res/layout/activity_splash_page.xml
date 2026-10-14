@@ -467,7 +467,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="87"
+        android:text="\"
         tools:layout_editor_absoluteX="209dp"
         tools:layout_editor_absoluteY="250dp" />
 
