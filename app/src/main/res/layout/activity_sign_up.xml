@@ -75,7 +75,7 @@
         android:id="@+id/imageView6"
         android:layout_width="97dp"
         android:layout_height="162dp"
-        app:srcCompat="@drawable/ClassFlowLogo"
+        app:srcCompat="@drawable/_34f2c6813964311c74a6be5ffb833b4ea71068eb"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="-33dp" />
 
