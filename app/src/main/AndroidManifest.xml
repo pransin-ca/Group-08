@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group08">
         <activity
-            android:name=".SplashPage"
+            android:name=".Grades"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
