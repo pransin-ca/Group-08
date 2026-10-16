@@ -20,18 +20,19 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.337" />
 
     <TextView
         android:id="@+id/textView45"
         android:layout_width="598dp"
         android:layout_height="461dp"
-        android:layout_marginTop="460dp"
         android:background="@drawable/custom_shape"
         android:backgroundTint="#D9AF85"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-84dp" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-94dp" />
 
     <TextView
         android:id="@+id/textView34"
@@ -42,10 +43,10 @@
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -85,12 +86,11 @@
         android:id="@+id/imageView2"
         android:layout_width="85dp"
         android:layout_height="79dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349"
+        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="@+id/textView52"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toTopOf="@+id/textView52"
         app:srcCompat="@drawable/NotificationIcon" />
 
     <ImageView
@@ -111,6 +111,7 @@
         android:fontFamily="@font/fredoka_one"
         android:text="DELA CRUZ, Juan"
         android:textSize="28sp"
+        android:textColor="#804000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.856"
@@ -123,14 +124,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_one"
+        android:textColor="#804000"
         android:text="4 new announcements!"
         android:textSize="21sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="@+id/textView52"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintTop_toTopOf="@+id/textView52"
+        app:layout_constraintVertical_bias="0.417" />
 
     <TextView
         android:id="@+id/textView28"
@@ -153,12 +155,13 @@
         android:fontFamily="@font/fredoka_one"
         android:text="Click here to view."
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        android:textColor="#804000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="@+id/textView52"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toTopOf="@+id/textView52"
+        app:layout_constraintVertical_bias="0.729" />
 
     <TextView
         android:id="@+id/textView61"
@@ -167,6 +170,7 @@
         android:fontFamily="@font/fredoka_one"
         android:text="Or use the search bar to find what you're looking for!"
         android:textSize="12sp"
+        android:textColor="#804000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.328"
@@ -183,11 +187,11 @@
         android:textColor="#180808"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.442" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -208,7 +212,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.617" />
 
     <TextView
         android:id="@+id/textView54"
@@ -222,7 +226,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.744" />
 
     <TextView
         android:id="@+id/textView57"
@@ -236,22 +240,24 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <TextView
         android:id="@+id/textView53"
         android:layout_width="145dp"
         android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/fredoka_one"
         android:text="GRADES"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintTop_toTopOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView60"
@@ -259,45 +265,48 @@
         android:layout_height="27dp"
         android:fontFamily="@font/fredoka_one"
         android:text="QUICK REDIRECT"
-        android:textColor="#FFFFFF"
+        android:textColor="#804000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.528" />
 
     <TextView
         android:id="@+id/textView56"
-        android:layout_width="166dp"
-        android:layout_height="44dp"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
         android:layout_marginStart="196dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="7dp"
         android:fontFamily="@font/fredoka_one"
         android:text="QUIZZES"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView54"
         app:layout_constraintEnd_toEndOf="@+id/textView54"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="@+id/textView45"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748" />
+        app:layout_constraintTop_toTopOf="@+id/textView54"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView58"
-        android:layout_width="194dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="181dp"
+        android:layout_width="191dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/fredoka_one"
         android:text="SCHEDULE"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView57"
         app:layout_constraintEnd_toEndOf="@+id/textView57"
-        app:layout_constraintHorizontal_bias="0.221"
-        app:layout_constraintStart_toStartOf="@+id/textView45"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toTopOf="@+id/textView57"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
