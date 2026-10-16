@@ -41,12 +41,12 @@
     <EditText
         android:id="@+id/editTextText16"
         android:layout_width="61dp"
-        android:layout_height="37dp"
+        android:layout_height="39dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="691dp" />
+        tools:layout_editor_absoluteY="689dp" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -64,7 +64,7 @@
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="327dp"
         tools:layout_editor_absoluteY="636dp" />
 
@@ -74,7 +74,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="266dp"
         tools:layout_editor_absoluteY="634dp" />
 
@@ -94,7 +94,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="350dp"
         tools:layout_editor_absoluteY="567dp" />
 
@@ -104,7 +104,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="533dp" />
 
@@ -114,7 +114,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="350dp"
         tools:layout_editor_absoluteY="487dp" />
 
@@ -124,7 +124,7 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="573dp" />
 
@@ -134,7 +134,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="441dp" />
 
@@ -144,7 +144,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="250dp" />
 
@@ -154,7 +154,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="393dp" />
 
@@ -164,7 +164,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="345dp" />
 
@@ -174,7 +174,7 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="349dp"
         tools:layout_editor_absoluteY="297dp" />
 
@@ -184,7 +184,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="527dp" />
 
@@ -194,7 +194,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="481dp" />
 
@@ -204,7 +204,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="435dp" />
 
@@ -214,7 +214,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="389dp" />
 
@@ -224,7 +224,7 @@
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="343dp" />
 
@@ -234,9 +234,9 @@
         android:layout_height="43dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="N/A"
         tools:layout_editor_absoluteX="283dp"
-        tools:layout_editor_absoluteY="302dp" />
+        tools:layout_editor_absoluteY="297dp" />
 
     <EditText
         android:id="@+id/editTextText13"
@@ -244,26 +244,7 @@
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="250dp" />
-
-    <EditText
-        android:id="@+id/editTextText13"
-        android:layout_width="62dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="349dp"
-        tools:layout_editor_absoluteY="250dp" />
-
-    <EditText
-        android:id="@+id/editTextText13"
-        android:layout_width="70dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:inputType="text"
+        android:text="N/A"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="250dp" />
 
@@ -336,22 +317,6 @@
         android:text="90"
         tools:layout_editor_absoluteX="209dp"
         tools:layout_editor_absoluteY="298dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="195dp"
-        android:layout_height="273dp"
-        app:srcCompat="@drawable/_34f2c6813964311c74a6be5ffb833b4ea71068eb"
-        tools:layout_editor_absoluteX="-47dp"
-        tools:layout_editor_absoluteY="-80dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="198dp"
-        android:layout_height="52dp"
-        app:srcCompat="@drawable/b7ef65c128c17b5cb6d60fd0a09a6983ca396881"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="34dp" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -498,5 +463,21 @@
         android:text="9:35 am"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="106dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="56dp"
+        android:layout_height="181dp"
+        android:src="@drawable/NotificationIcon"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="-23dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="151dp"
+        android:layout_height="241dp"
+        android:src="@drawable/ClassFlowLogo"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="-74dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
