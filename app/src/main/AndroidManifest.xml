@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group08">
         <activity
-            android:name=".SplashPage"
+            android:name=".Grades"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -40,6 +40,30 @@
             android:name=".SignUp"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Quiz"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Schedule"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

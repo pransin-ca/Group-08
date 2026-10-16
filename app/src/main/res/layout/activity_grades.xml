@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD59B"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- ================= HEADER (everything above the table) ================= -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <!-- Logo (top-left) -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Classflow logo"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Date, beside the logo -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Wed, Oct 14"
+            android:textColor="@color/grid_title"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivLogo"
+            app:layout_constraintStart_toEndOf="@id/ivLogo"
+            app:layout_constraintTop_toTopOf="@id/ivLogo" />
+
+        <!-- Notification bell (top-right) -->
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Notifications"
+            android:src="@drawable/ic_bell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Notification badge on the bell -->
+        <TextView
+            android:id="@+id/tvBadge"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/badge_bg"
+            android:fontFamily="@font/fredoka_one"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@id/ivBell"
+            app:layout_constraintTop_toTopOf="@id/ivBell" />
+
+        <!-- Big title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="QUIZZES"
+            android:textColor="@color/grid_title"
+            android:textSize="56sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+        <!-- Student name + section -->
+
+        <!-- Divider line -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/grid_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStudent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Flexible gap: pushes the button + table to the bottom.
+         Elements you add ABOVE this line stay at the top of the screen. -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:id="@+id/gradesScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <!-- Gray background + 1dp padding on all sides = outer border only -->
+        <TableLayout
+            android:id="@+id/gradesTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9E9E9E"
+            android:padding="1dp"
+            android:stretchColumns="1,2,3,4,5">
+
+            <!-- Header -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridHeader" android:minWidth="96dp" android:text="Subject" />
+                <TextView style="@style/GridHeader" android:minWidth="0dp" android:text="Q1" />
+                <TextView style="@style/GridHeader" android:minWidth="0dp" android:text="Q2" />
+                <TextView style="@style/GridHeader" android:minWidth="0dp" android:text="Q3" />
+                <TextView style="@style/GridHeader" android:minWidth="0dp" android:text="Q4" />
+                <TextView style="@style/GridHeader" android:minWidth="0dp" android:text="Final" />
+            </TableRow>
+
+            <!-- Subject 1 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="Effective Communication" />
+                <EditText android:id="@+id/s1_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s1_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s1_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s1_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s1_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 2 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="Mabisang Komunikasyon" />
+                <EditText android:id="@+id/s2_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s2_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s2_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s2_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s2_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 3 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="PKLP" />
+                <EditText android:id="@+id/s3_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s3_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s3_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s3_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s3_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 4 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="CLED" />
+                <EditText android:id="@+id/s4_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s4_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s4_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s4_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s4_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 5 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="General Mathematics" />
+                <EditText android:id="@+id/s5_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s5_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s5_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s5_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s5_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 6 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="General Science" />
+                <EditText android:id="@+id/s6_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s6_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s6_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s6_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s6_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 7 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="Life and Career Skills" />
+                <EditText android:id="@+id/s7_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s7_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s7_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s7_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s7_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Subject 8 -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridLabel" android:text="Computer Programming" />
+                <EditText android:id="@+id/s8_q1" style="@style/GridInput" android:importantForAutofill="no" android:text="75" />
+                <EditText android:id="@+id/s8_q2" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s8_q3" style="@style/GridInput" android:importantForAutofill="no" />
+                <EditText android:id="@+id/s8_q4" style="@style/GridInput" android:importantForAutofill="no" />
+                <TextView android:id="@+id/s8_final" style="@style/GridCell" />
+            </TableRow>
+
+            <!-- Qtr Avg. -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridAvg" android:minWidth="96dp" android:text="Qtr Avg." android:textStyle="bold" />
+                <TextView android:id="@+id/qavg_q1" style="@style/GridAvg" android:text="75.0" />
+                <TextView android:id="@+id/qavg_q2" style="@style/GridAvg" />
+                <TextView android:id="@+id/qavg_q3" style="@style/GridAvg" />
+                <TextView android:id="@+id/qavg_q4" style="@style/GridAvg" />
+                <TextView android:id="@+id/qavg_final" style="@style/GridAvg" />
+            </TableRow>
+
+            <!-- General Avg. -->
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView style="@style/GridGeneral" android:minWidth="96dp" android:text="General Avg." android:textStyle="bold" />
+                <TextView android:id="@+id/gavg_q1" style="@style/GridGeneral" />
+                <TextView android:id="@+id/gavg_q2" style="@style/GridGeneral" />
+                <TextView android:id="@+id/gavg_q3" style="@style/GridGeneral" />
+                <TextView android:id="@+id/gavg_q4" style="@style/GridGeneral" />
+                <TextView android:id="@+id/gavg_final" style="@style/GridGeneral" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="DELA CRUZ, Juan    11 St. Carlo Acutis"
+        android:textColor="@color/grid_subtitle"
+        android:textSize="12sp" />
+
+</LinearLayout>
