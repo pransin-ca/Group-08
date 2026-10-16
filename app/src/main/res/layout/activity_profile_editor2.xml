@@ -52,7 +52,7 @@
         android:id="@+id/emptyProfilePicture"
         android:layout_width="245dp"
         android:layout_height="242dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="76dp"
         android:src="@drawable/EmptyProfilePicture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="220dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Edit Profile Picture"
         android:textSize="24sp"
@@ -82,7 +82,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.495" />
 
     <TextView
         android:id="@+id/textView9"
@@ -96,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        app:layout_constraintVertical_bias="0.622" />
 
     <TextView
         android:id="@+id/textView38"
@@ -110,7 +110,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:layout_constraintVertical_bias="0.757" />
 
     <TextView
         android:id="@+id/textView50"
@@ -121,16 +121,16 @@
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
+        app:layout_constraintVertical_bias="0.922" />
 
     <TextView
         android:id="@+id/textView47"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="52dp"
         android:layout_marginBottom="4dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Edit name"
