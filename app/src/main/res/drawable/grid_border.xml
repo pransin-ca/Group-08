@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Draws only the TOP and LEFT 1dp edge of each cell, so neighbouring cells never double up.
+     The TableLayout supplies the right and bottom edge (see activity_grades.xml). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4f381a" />
+        </shape>
+    </item>
+    <item
+        android:top="1dp"
+        android:left="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFD59B" />
+        </shape>
+    </item>
+</layer-list>
