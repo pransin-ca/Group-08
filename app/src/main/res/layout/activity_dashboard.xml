@@ -9,304 +9,371 @@
     tools:context=".Dashboard">
 
     <TextView
-        android:id="@+id/textView52"
-        android:layout_width="352dp"
-        android:layout_height="93dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
+        android:id="@+id/userTypeLoginField2"
+        android:layout_width="376dp"
+        android:layout_height="101dp"
+        android:background="@drawable/custom_rounded_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintVertical_bias="0.329" />
 
-    <TextView
-        android:id="@+id/textView45"
-        android:layout_width="598dp"
-        android:layout_height="461dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
+    <ImageView
+        android:id="@+id/emptyPfpLogin3"
+        android:layout_width="150dp"
+        android:layout_height="149dp"
+        android:src="@drawable/empty_profile_picture"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="-94dp" />
+        app:layout_constraintVertical_bias="0.118" />
+
+    <ImageView
+        android:id="@+id/emptyPfpLogin2"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:src="@drawable/empty_profile_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ImageView
+        android:id="@+id/classflowLogo"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:src="@drawable/classflow_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView34"
-        android:layout_width="350dp"
+        android:id="@+id/dateView"
+        android:layout_width="135dp"
         android:layout_height="31dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#FFFFFF"
-        android:gravity="center"
+        android:text="MON, OCT. 19"
+        android:textColor="#804000"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="81dp"
-        android:layout_height="95dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ClassFlowLogo" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="TextView"
-        android:textColor="#804000"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Wed, Oct 14" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="65dp"
-        android:layout_height="39dp"
+        android:id="@+id/notificationIcon"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:src="@drawable/notification_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintHorizontal_bias="0.918"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
-        app:srcCompat="@drawable/NotificationIcon" />
+        app:layout_constraintVertical_bias="0.046" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="85dp"
-        android:layout_height="79dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView52"
-        app:layout_constraintEnd_toEndOf="@+id/textView52"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="@+id/textView52"
-        app:layout_constraintTop_toTopOf="@+id/textView52"
-        app:srcCompat="@drawable/NotificationIcon" />
-
-    <ImageView
-        android:id="@+id/emptyProfilePicture"
-        android:layout_width="137dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="92dp"
-        android:src="@drawable/EmptyProfilePicture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/notificationIcon2"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:src="@drawable/notification_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
+        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField2"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
+        app:layout_constraintVertical_bias="0.454" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/nameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/fredoka_one"
-        android:text="DELA CRUZ, Juan"
-        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        android:text="DELA CRUZ, JUAN"
         android:textColor="#804000"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.856"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/announcementHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/fredoka_one"
-        android:textColor="#804000"
+        android:fontFamily="sans-serif-black"
         android:text="4 new announcements!"
-        android:textSize="21sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView52"
-        app:layout_constraintEnd_toEndOf="@+id/textView52"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
-        app:layout_constraintTop_toTopOf="@+id/textView52"
-        app:layout_constraintVertical_bias="0.417" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/fredoka_one"
-        android:text="11-ICT-St. Carlo Acutis"
-        android:textSize="16sp"
+        android:textColor="#804000"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/sectionView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Click here to view."
-        android:textSize="16sp"
-        android:textColor="#804000"
-        app:layout_constraintBottom_toBottomOf="@+id/textView52"
-        app:layout_constraintEnd_toEndOf="@+id/textView52"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="@+id/textView52"
-        app:layout_constraintTop_toTopOf="@+id/textView52"
-        app:layout_constraintVertical_bias="0.729" />
-
-    <TextView
-        android:id="@+id/textView61"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Or use the search bar to find what you're looking for!"
-        android:textSize="12sp"
-        android:textColor="#804000"
+        android:fontFamily="sans-serif-medium"
+        android:text="11 - ICT - St. Carlo Acutis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.328"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.944" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/editProfileOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Looking for something?"
-        android:textColor="#180808"
-        android:textSize="12sp"
+        android:text="Edit profile"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView34"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
+        app:layout_constraintTop_toTopOf="@+id/emptyPfpLogin3"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/announcementViewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to view all."
+        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
+        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField2"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <TextView
+        android:id="@+id/searchEngine"
+        android:layout_width="360dp"
+        android:layout_height="35dp"
+        android:background="@drawable/searchbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintVertical_bias="0.454" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="26dp"
-        android:layout_height="31dp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="403dp" />
+        android:id="@+id/magnifyingLens"
+        android:layout_width="17dp"
+        android:layout_height="18dp"
+        android:src="@drawable/search_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/searchEngine"
+        app:layout_constraintEnd_toEndOf="@+id/searchEngine"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/searchEngine"
+        app:layout_constraintTop_toTopOf="@+id/searchEngine"
+        app:layout_constraintVertical_bias="0.411" />
 
     <TextView
-        android:id="@+id/textView30"
-        android:layout_width="364dp"
-        android:layout_height="62dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#63aa29"
-        android:gravity="center"
+        android:id="@+id/searchbarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looking for something?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/searchEngine"
+        app:layout_constraintEnd_toEndOf="@+id/searchEngine"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="@+id/searchEngine"
+        app:layout_constraintTop_toTopOf="@+id/searchEngine"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <TextView
+        android:id="@+id/dashboardBackground"
+        android:layout_width="457dp"
+        android:layout_height="436dp"
+        android:background="@drawable/custom_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView54"
-        android:layout_width="364dp"
-        android:layout_height="62dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#63aa29"
-        android:gravity="center"
+        android:id="@+id/dashboardHeader"
+        android:layout_width="374dp"
+        android:layout_height="59dp"
+        android:background="@drawable/custom_rounded_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <TextView
-        android:id="@+id/textView57"
-        android:layout_width="364dp"
-        android:layout_height="62dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#63aa29"
-        android:gravity="center"
+        android:id="@+id/subjectBackground"
+        android:layout_width="376dp"
+        android:layout_height="115dp"
+        android:background="@drawable/custom_rounded_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
+        app:layout_constraintVertical_bias="0.707" />
 
     <TextView
-        android:id="@+id/textView53"
-        android:layout_width="145dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="GRADES"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
-        app:layout_constraintTop_toTopOf="@+id/textView30"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView60"
-        android:layout_width="172dp"
-        android:layout_height="27dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="QUICK REDIRECT"
-        android:textColor="#804000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="@+id/emptyProfilePicture"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
-
-    <TextView
-        android:id="@+id/textView56"
-        android:layout_width="146dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="7dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="QUIZZES"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView54"
-        app:layout_constraintEnd_toEndOf="@+id/textView54"
-        app:layout_constraintHorizontal_bias="0.159"
-        app:layout_constraintStart_toStartOf="@+id/textView45"
-        app:layout_constraintTop_toTopOf="@+id/textView54"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="191dp"
+        android:id="@+id/dashboardHeaderTitle"
+        android:layout_width="219dp"
         android:layout_height="37dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SCHEDULE"
-        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:text="MOST USED"
+        android:textColor="#804000"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView57"
-        app:layout_constraintEnd_toEndOf="@+id/textView57"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/textView57"
-        app:layout_constraintTop_toTopOf="@+id/textView57"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboardHeader"
+        app:layout_constraintEnd_toEndOf="@+id/dashboardHeader"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="@+id/dashboardHeader"
+        app:layout_constraintTop_toTopOf="@+id/dashboardHeader"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <ImageView
+        android:id="@+id/notebookIcon"
+        android:layout_width="116dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="245dp"
+        android:src="@drawable/pixelated_notebook"
+        app:layout_constraintBottom_toBottomOf="@+id/subjectBackground"
+        app:layout_constraintEnd_toEndOf="@+id/subjectBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subjectBackground"
+        app:layout_constraintTop_toTopOf="@+id/subjectBackground"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/subjectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="SUBJECTS"
+        android:textColor="#804000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/subjectBackground"
+        app:layout_constraintEnd_toEndOf="@+id/subjectBackground"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="@+id/subjectBackground"
+        app:layout_constraintTop_toTopOf="@+id/subjectBackground"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <TextView
+        android:id="@+id/subjectsSubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all your subjects."
+        app:layout_constraintBottom_toBottomOf="@+id/subjectBackground"
+        app:layout_constraintEnd_toEndOf="@+id/subjectBackground"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/subjectBackground"
+        app:layout_constraintTop_toTopOf="@+id/subjectBackground"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <TextView
+        android:id="@+id/gradesBackground"
+        android:layout_width="143dp"
+        android:layout_height="121dp"
+        android:background="@drawable/custom_rs_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <TextView
+        android:id="@+id/scheduleBackground"
+        android:layout_width="143dp"
+        android:layout_height="121dp"
+        android:background="@drawable/custom_rs_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <ImageView
+        android:id="@+id/examPaperView"
+        android:layout_width="106dp"
+        android:layout_height="103dp"
+        android:src="@drawable/pixelated_exam_paper"
+        app:layout_constraintBottom_toBottomOf="@+id/gradesBackground"
+        app:layout_constraintEnd_toEndOf="@+id/gradesBackground"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="@+id/gradesBackground"
+        app:layout_constraintTop_toTopOf="@+id/gradesBackground"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gradesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRADES"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gradesBackground"
+        app:layout_constraintEnd_toEndOf="@+id/gradesBackground"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/gradesBackground"
+        app:layout_constraintTop_toTopOf="@+id/gradesBackground"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <ImageView
+        android:id="@+id/calendarView"
+        android:layout_width="86dp"
+        android:layout_height="68dp"
+        android:src="@drawable/pixelated_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBackground"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBackground"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBackground"
+        app:layout_constraintTop_toTopOf="@+id/scheduleBackground"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBackground"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBackground"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBackground"
+        app:layout_constraintTop_toTopOf="@+id/scheduleBackground"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Or you can use the search bar to look for something else!"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
 </androidx.constraintlayout.widget.ConstraintLayout>

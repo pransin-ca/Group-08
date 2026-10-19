@@ -3,14 +3,15 @@
     android:shape="rectangle"> <!-- Can be rectangle, oval, line, or ring -->
 
     <!-- Inner background color -->
-    <solid android:color="#5C4033" />
+    <solid android:color="#d9af85" />
 
     <!-- Border/Outline -->
     <stroke
-        android:width="2dp"
+        android:width="7dp"
         android:color="#FFFFFF" />
 
     <!-- Rounded corners -->
-    <corners android:radius="0dp" />
+    <corners android:radius="20dp" />
 
 </shape>
+

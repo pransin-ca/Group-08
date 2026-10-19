@@ -6,202 +6,170 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFD59B"
-    android:foregroundTint="#5B0C0C"
     tools:context=".SignUp">
 
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
-        android:background="#008E3E3E"
-        android:fontFamily="@font/fredoka_one"
-        android:foregroundTint="#280909"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#804000"
-        android:textColorHighlight="#804000"
-        android:textColorHint="#A60404"
-        android:textColorLink="#03A9F4"
-        android:textSize="75sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Sign Up" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="336dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="528dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="334dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="404dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="334dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="292dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="237dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="168dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#804000"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="136dp"
-        android:layout_height="130dp"
-        android:src="@drawable/ClassFlowLogo"
+        android:id="@+id/classflowLogo"
+        android:layout_width="163dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/classflow_logo" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/classflowWordmark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="104dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="TextView"
+        android:text="ClassFlow"
         android:textColor="#804000"
-        android:textSize="25sp"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="ClassFlow" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/signUpView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="4dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="TextView"
+        android:text="SIGN UP"
         android:textColor="#804000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Create password" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="TextView"
-        android:textColor="#804000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        android:id="@+id/userTypeSignUpField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="Retype password" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/studentIDSignUpField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <TextView
+        android:id="@+id/passwordSignUpField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/retypePasswordSignUpField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+    <TextView
+        android:id="@+id/userTypeSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="4dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Student ID"
+        android:text="User Type (Type STUDENT or TEACHER. All caps)"
         android:textColor="#804000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/userTypeSignUpField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userTypeSignUpField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/studentID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="15dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="Create account"
-        android:textColor="#FFCB94"
+        android:text="Student ID (If teacher, put email.)"
+        android:textColor="#804000"
+        app:layout_constraintBottom_toTopOf="@+id/studentIDSignUpField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/studentIDSignUpField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.983" />
+
+    <TextView
+        android:id="@+id/passwordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create password"
+        android:textColor="#804000"
+        app:layout_constraintBottom_toTopOf="@+id/passwordSignUpField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordSignUpField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <TextView
+        android:id="@+id/retypePasswordSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retype password"
+        android:textColor="#804000"
+        app:layout_constraintBottom_toTopOf="@+id/retypePasswordSignUpField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/retypePasswordSignUpField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <TextView
+        android:id="@+id/retypePasswordSignUpField2"
+        android:layout_width="304dp"
+        android:layout_height="54dp"
+        android:background="@drawable/custom_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView20"
-        app:layout_constraintEnd_toEndOf="@+id/textView20"
-        app:layout_constraintStart_toStartOf="@+id/textView20"
-        app:layout_constraintTop_toTopOf="@+id/textView20" />
-
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.08"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/retypePasswordSignUpField2"
+        app:layout_constraintEnd_toEndOf="@+id/retypePasswordSignUpField2"
+        app:layout_constraintStart_toStartOf="@+id/retypePasswordSignUpField2"
+        app:layout_constraintTop_toTopOf="@+id/retypePasswordSignUpField2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
