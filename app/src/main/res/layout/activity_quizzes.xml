@@ -9,6 +9,20 @@
     tools:context=".Quizzes">
 
     <TextView
+        android:id="@+id/quizBody"
+        android:layout_width="292dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="84dp"
+        android:background="@drawable/custom_square"
+        android:backgroundTint="#2E6F40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/circleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <TextView
         android:id="@+id/viewMoreQuiz"
         android:layout_width="304dp"
         android:layout_height="54dp"
@@ -18,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintVertical_bias="0.886" />
 
     <TextView
         android:id="@+id/quizBody3"
@@ -32,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="@+id/circleView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+        app:layout_constraintVertical_bias="0.779" />
 
     <TextView
         android:id="@+id/textView18"
@@ -46,10 +60,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/quizBody2"
         app:layout_constraintEnd_toEndOf="@+id/quizBody2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/quizBody2"
         app:layout_constraintTop_toTopOf="@+id/quizBody2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/circleView3"
@@ -62,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812" />
+        app:layout_constraintVertical_bias="0.784" />
 
     <TextView
         android:id="@+id/textView19"
@@ -78,7 +92,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/circleView2"
         app:layout_constraintEnd_toEndOf="@+id/circleView2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/circleView2"
         app:layout_constraintTop_toTopOf="@+id/circleView2"
         app:layout_constraintVertical_bias="1.0" />
@@ -97,10 +111,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/quizBody2"
         app:layout_constraintEnd_toEndOf="@+id/quizBody2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/quizBody2"
         app:layout_constraintTop_toTopOf="@+id/quizBody2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/quizBody2"
@@ -114,7 +128,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/circleView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
+        app:layout_constraintVertical_bias="0.574" />
 
     <TextView
         android:id="@+id/textView14"
@@ -146,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.572" />
 
     <TextView
         android:id="@+id/score2"
@@ -181,18 +195,210 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/quizBody"
-        android:layout_width="292dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="84dp"
-        android:background="@drawable/custom_square"
+        android:id="@+id/circleView"
+        android:layout_width="118dp"
+        android:layout_height="122dp"
+        android:background="@drawable/custom_circle"
         android:backgroundTint="#2E6F40"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/circleView"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="9/10"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circleView"
+        app:layout_constraintEnd_toEndOf="@+id/circleView"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/circleView"
+        app:layout_constraintTop_toTopOf="@+id/circleView"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Quiz 2"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/quizBody"
+        app:layout_constraintEnd_toEndOf="@+id/quizBody"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quizBody"
+        app:layout_constraintTop_toTopOf="@+id/quizBody"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/subjectQuiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="21dp"
+        android:text="SUB: Computer Programming"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/quizBody"
+        app:layout_constraintEnd_toEndOf="@+id/quizBody"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quizBody"
+        app:layout_constraintTop_toTopOf="@+id/quizBody"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="18/20"
+        android:textColor="#F8F8F8"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circleView2"
+        app:layout_constraintEnd_toEndOf="@+id/circleView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/circleView2"
+        app:layout_constraintTop_toTopOf="@+id/circleView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/activityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Activity 1"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/quizBody2"
+        app:layout_constraintEnd_toEndOf="@+id/quizBody2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quizBody2"
+        app:layout_constraintTop_toTopOf="@+id/quizBody2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/subjectQuiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="15dp"
+        android:text="SUB: General Mathematics"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/quizBody2"
+        app:layout_constraintEnd_toEndOf="@+id/quizBody2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quizBody2"
+        app:layout_constraintTop_toTopOf="@+id/quizBody2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/monthQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="46dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="NOV"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circleView3"
+        app:layout_constraintEnd_toEndOf="@+id/circleView3"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/circleView3"
+        app:layout_constraintTop_toTopOf="@+id/circleView3"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:id="@+id/dateQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circleView3"
+        app:layout_constraintEnd_toEndOf="@+id/circleView3"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/circleView3"
+        app:layout_constraintTop_toTopOf="@+id/circleView3"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="sans-serif-black"
+        android:text="PETA 1"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/quizBody3"
+        app:layout_constraintEnd_toEndOf="@+id/quizBody3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/circleView3"
+        app:layout_constraintTop_toTopOf="@+id/quizBody3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/subjectQuiz3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="18dp"
+        android:text="SUB: PKLP"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="@+id/quizBody3"
+        app:layout_constraintEnd_toEndOf="@+id/quizBody3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quizBody3"
+        app:layout_constraintTop_toTopOf="@+id/quizBody3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/viewMoreQuizzes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="sans-serif-black"
+        android:text="VIEW MORE QUIZZES"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMoreQuiz"
+        app:layout_constraintEnd_toEndOf="@+id/viewMoreQuiz"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/viewMoreQuiz"
+        app:layout_constraintTop_toTopOf="@+id/viewMoreQuiz"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/lineView2"
@@ -203,7 +409,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        app:layout_constraintVertical_bias="0.237" />
 
     <TextView
         android:id="@+id/textView7"
@@ -217,7 +423,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.196" />
 
     <TextView
         android:id="@+id/quizzesHeader"
@@ -230,10 +436,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+        app:layout_constraintVertical_bias="0.148" />
 
     <ImageView
         android:id="@+id/emptyPfpLogin6"
@@ -298,196 +504,88 @@
         app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <TextView
-        android:id="@+id/circleView"
-        android:layout_width="118dp"
-        android:layout_height="122dp"
-        android:background="@drawable/custom_circle"
-        android:backgroundTint="#2E6F40"
+        android:id="@+id/redirectShape"
+        android:layout_width="553dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="378dp"
+        android:background="@drawable/redirect_section"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
+        app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="9/10"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/circleView"
-        app:layout_constraintEnd_toEndOf="@+id/circleView"
-        app:layout_constraintStart_toStartOf="@+id/circleView"
-        app:layout_constraintTop_toTopOf="@+id/circleView" />
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/pixelated_house"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginBottom="41dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Quiz 2"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/quizBody"
-        app:layout_constraintEnd_toEndOf="@+id/quizBody"
-        app:layout_constraintStart_toStartOf="@+id/quizBody"
-        app:layout_constraintTop_toTopOf="@+id/quizBody" />
-
-    <TextView
-        android:id="@+id/subjectQuiz1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="21dp"
-        android:text="SUB: Computer Programming"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/quizBody"
-        app:layout_constraintEnd_toEndOf="@+id/quizBody"
-        app:layout_constraintStart_toStartOf="@+id/quizBody"
-        app:layout_constraintTop_toTopOf="@+id/quizBody" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="36dp"
-        android:fontFamily="sans-serif-black"
-        android:text="18/20"
-        android:textColor="#F8F8F8"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/circleView2"
-        app:layout_constraintEnd_toEndOf="@+id/circleView2"
-        app:layout_constraintStart_toStartOf="@+id/circleView2"
-        app:layout_constraintTop_toTopOf="@+id/circleView2" />
-
-    <TextView
-        android:id="@+id/activityName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="37dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Activity 1"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/quizBody2"
-        app:layout_constraintEnd_toEndOf="@+id/quizBody2"
-        app:layout_constraintStart_toStartOf="@+id/quizBody2"
-        app:layout_constraintTop_toTopOf="@+id/quizBody2" />
-
-    <TextView
-        android:id="@+id/subjectQuiz2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="15dp"
-        android:text="SUB: General Mathematics"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/quizBody2"
-        app:layout_constraintEnd_toEndOf="@+id/quizBody2"
-        app:layout_constraintStart_toStartOf="@+id/quizBody2"
-        app:layout_constraintTop_toTopOf="@+id/quizBody2" />
-
-    <TextView
-        android:id="@+id/monthQuiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginEnd="46dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="NOV"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/circleView3"
-        app:layout_constraintEnd_toEndOf="@+id/circleView3"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/circleView3"
-        app:layout_constraintTop_toTopOf="@+id/circleView3"
-        app:layout_constraintVertical_bias="0.255" />
-
-    <TextView
-        android:id="@+id/dateQuiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="12"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/circleView3"
-        app:layout_constraintEnd_toEndOf="@+id/circleView3"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="@+id/circleView3"
-        app:layout_constraintTop_toTopOf="@+id/circleView3"
-        app:layout_constraintVertical_bias="0.655" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="37dp"
-        android:fontFamily="sans-serif-black"
-        android:text="PETA 1"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/quizBody3"
-        app:layout_constraintEnd_toEndOf="@+id/quizBody3"
-        app:layout_constraintStart_toStartOf="@+id/circleView3"
-        app:layout_constraintTop_toTopOf="@+id/quizBody3" />
-
-    <TextView
-        android:id="@+id/subjectQuiz3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginBottom="18dp"
-        android:text="SUB: PKLP"
-        android:textColor="#FFFEFE"
-        app:layout_constraintBottom_toBottomOf="@+id/quizBody3"
-        app:layout_constraintEnd_toEndOf="@+id/quizBody3"
+    <ImageView
+        android:id="@+id/bubbleChatView"
+        android:layout_width="49dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:src="@drawable/pixelated_bubble_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/quizBody3"
-        app:layout_constraintTop_toTopOf="@+id/quizBody3"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/viewMoreQuizzes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="13dp"
-        android:fontFamily="sans-serif-black"
-        android:text="VIEW MORE QUIZZES"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/viewMoreQuiz"
-        app:layout_constraintEnd_toEndOf="@+id/viewMoreQuiz"
-        app:layout_constraintStart_toStartOf="@+id/viewMoreQuiz"
-        app:layout_constraintTop_toTopOf="@+id/viewMoreQuiz" />
+    <ImageView
+        android:id="@+id/notebookIcon2"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="229dp"
+        android:src="@drawable/pixelated_notebook"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pixelatedExamView2"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/pixelated_exam_paper"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <ImageView
+        android:id="@+id/calendarView2"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:src="@drawable/pixelated_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -113,16 +113,17 @@
         android:id="@+id/announcementHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
         android:fontFamily="sans-serif-black"
         android:text="4 new announcements!"
         android:textColor="#804000"
         android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
-        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
+        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField2"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
+        app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/sectionView"
@@ -200,15 +201,15 @@
 
     <TextView
         android:id="@+id/dashboardBackground"
-        android:layout_width="457dp"
-        android:layout_height="436dp"
+        android:layout_width="678dp"
+        android:layout_height="434dp"
         android:background="@drawable/custom_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.964" />
 
     <TextView
         android:id="@+id/dashboardHeader"
@@ -300,7 +301,7 @@
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.89" />
 
     <TextView
         android:id="@+id/scheduleBackground"
@@ -312,10 +313,10 @@
         app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="0.889" />
 
     <ImageView
-        android:id="@+id/examPaperView"
+        android:id="@+id/pixelatedExamView"
         android:layout_width="106dp"
         android:layout_height="103dp"
         android:src="@drawable/pixelated_exam_paper"
@@ -334,7 +335,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/gradesBackground"
         app:layout_constraintEnd_toEndOf="@+id/gradesBackground"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/gradesBackground"
         app:layout_constraintTop_toTopOf="@+id/gradesBackground"
         app:layout_constraintVertical_bias="0.914" />
@@ -365,15 +366,85 @@
         app:layout_constraintVertical_bias="0.914" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="Or you can use the search bar to look for something else!"
-        android:textColor="#FFFFFF"
+        android:id="@+id/redirectShape"
+        android:layout_width="553dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="378dp"
+        android:background="@drawable/redirect_section"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/pixelated_house"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/bubbleChatView"
+        android:layout_width="49dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:src="@drawable/pixelated_bubble_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/notebookIcon2"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="229dp"
+        android:src="@drawable/pixelated_notebook"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pixelatedExamView2"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/pixelated_exam_paper"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <ImageView
+        android:id="@+id/calendarView2"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:src="@drawable/pixelated_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

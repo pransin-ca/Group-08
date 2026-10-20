@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD59B"
+    tools:context=".Grades">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#000000"
+            android:padding="1dp"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6">
+
+            <!-- Row 1: Header -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#804000"
+                    android:padding="6dp"
+                    android:text="Subject"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#804000"
+                    android:padding="6dp"
+                    android:text="1Q"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#804000"
+                    android:padding="6dp"
+                    android:text="2Q"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#804000"
+                    android:padding="6dp"
+                    android:text="3Q"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#804000"
+                    android:padding="6dp"
+                    android:text="4Q"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#804000"
+                    android:padding="6dp"
+                    android:text="Average"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Row 2 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="Effective Communication"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="91"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="Mabisang Komunikasyon"
+                    android:textColor="#804000"
+                    android:textColorHighlight="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="88"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="General Mathematics"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="95"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="General Science"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="94"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 6 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="PKLP"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="87"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 7 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="Life and Career Skills"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="88"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 8 -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="Computer Programming"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="89"
+                    android:textColor="#804000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#FFD59B"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <!-- Row 9: only 2 cells, the second one is larger -->
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:layout_span="5"
+                    android:background="#EFBF04"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="General Weighted Average (GWA)"
+                    android:textColor="#040404"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:background="#EFBF04"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="6dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/lineView2"
+            android:layout_width="373dp"
+            android:layout_height="62dp"
+            android:background="@drawable/custom_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.299" />
+
+        <TextView
+            android:id="@+id/gradesSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 - ICT - St. Carlo Acutis"
+            android:textColor="#804000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.244" />
+
+        <ImageView
+            android:id="@+id/notificationIcon6"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:src="@drawable/notification_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <ImageView
+            android:id="@+id/emptyPfpLogin7"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:src="@drawable/empty_profile_picture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.814"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <ImageView
+            android:id="@+id/classflowLogo5"
+            android:layout_width="100dp"
+            android:layout_height="107dp"
+            android:src="@drawable/classflow_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dateView5"
+            android:layout_width="135dp"
+            android:layout_height="31dp"
+            android:text="MON, OCT. 19"
+            android:textColor="#804000"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.271"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:id="@+id/redirectShape"
+            android:layout_width="553dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="378dp"
+            android:background="@drawable/redirect_section"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.654"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/homeLogo"
+            android:layout_width="38dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/pixelated_house"
+            app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+            app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="@+id/redirectShape"
+            app:layout_constraintTop_toTopOf="@+id/redirectShape"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/bubbleChatView"
+            android:layout_width="49dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="202dp"
+            android:src="@drawable/pixelated_bubble_chat"
+            app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+            app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/redirectShape"
+            app:layout_constraintTop_toTopOf="@+id/redirectShape"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/notebookIcon2"
+            android:layout_width="67dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="257dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="229dp"
+            android:src="@drawable/pixelated_notebook"
+            app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+            app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/redirectShape"
+            app:layout_constraintTop_toTopOf="@+id/redirectShape"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/pixelatedExamView2"
+            android:layout_width="75dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="337dp"
+            android:layout_marginEnd="141dp"
+            android:src="@drawable/pixelated_exam_paper"
+            app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+            app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/redirectShape"
+            app:layout_constraintTop_toTopOf="@+id/redirectShape"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <ImageView
+            android:id="@+id/calendarView2"
+            android:layout_width="55dp"
+            android:layout_height="42dp"
+            android:src="@drawable/pixelated_calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+            app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="@+id/redirectShape"
+            app:layout_constraintTop_toTopOf="@+id/redirectShape"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/gradesHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="DELA CRUZ, JUAN"
+            android:textColor="#804000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <TextView
+            android:id="@+id/gradesHeader2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="GRADES"
+            android:textColor="#804000"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.367" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="654621"
+            android:text="VIEW QUALIFIED AWARDS AND HONORS"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.839" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

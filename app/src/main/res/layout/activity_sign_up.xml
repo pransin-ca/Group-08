@@ -38,6 +38,7 @@
         android:id="@+id/signUpView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="SIGN UP"
         android:textColor="#804000"
         android:textSize="60sp"
@@ -148,28 +149,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.989" />
 
-    <TextView
-        android:id="@+id/retypePasswordSignUpField2"
-        android:layout_width="304dp"
-        android:layout_height="54dp"
-        android:background="@drawable/custom_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
-
-    <TextView
-        android:id="@+id/createAccount"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CREATE ACCOUNT"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/retypePasswordSignUpField2"
-        app:layout_constraintEnd_toEndOf="@+id/retypePasswordSignUpField2"
-        app:layout_constraintStart_toStartOf="@+id/retypePasswordSignUpField2"
-        app:layout_constraintTop_toTopOf="@+id/retypePasswordSignUpField2" />
+        android:backgroundTint="#654621"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
