@@ -67,6 +67,18 @@
         app:layout_constraintVertical_bias="0.142" />
 
     <ImageView
+        android:id="@+id/emptyPfpLogin8"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:src="@drawable/empty_profile_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
         android:id="@+id/notificationIcon3"
         android:layout_width="45dp"
         android:layout_height="35dp"
