@@ -103,6 +103,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="91"
                     android:textColor="#804000"
@@ -153,6 +154,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="88"
                     android:textColor="#804000"
@@ -202,6 +204,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="95"
                     android:textColor="#804000"
@@ -251,6 +254,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="94"
                     android:textColor="#804000"
@@ -300,6 +304,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="87"
                     android:textColor="#804000"
@@ -349,6 +354,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="88"
                     android:textColor="#804000"
@@ -398,6 +404,7 @@
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
+                    android:fontFamily="sans-serif-black"
                     android:padding="6dp"
                     android:text="89"
                     android:textColor="#804000"
