@@ -6,214 +6,570 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFD59B"
-    android:foregroundTint="#5B0C0C"
     tools:context=".Schedule">
 
     <TextView
-        android:id="@+id/textView66"
-        android:layout_width="117dp"
-        android:layout_height="114dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
+        android:id="@+id/dateBackground3"
+        android:layout_width="116dp"
+        android:layout_height="110dp"
+        android:background="@drawable/custom_rounded_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.379" />
 
     <TextView
-        android:id="@+id/textView69"
-        android:layout_width="338dp"
-        android:layout_height="60dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
-
-    <TextView
-        android:id="@+id/textView70"
-        android:layout_width="346dp"
-        android:layout_height="292dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
-
-    <TextView
-        android:id="@+id/textView67"
-        android:layout_width="117dp"
-        android:layout_height="114dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
+        android:id="@+id/dateBackground2"
+        android:layout_width="132dp"
+        android:layout_height="126dp"
+        android:background="@drawable/custom_rs_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.378" />
 
     <TextView
-        android:id="@+id/textView68"
-        android:layout_width="117dp"
-        android:layout_height="114dp"
-        android:background="@drawable/custom_shape"
-        android:backgroundTint="#D9AF85"
-        android:gravity="center"
+        android:id="@+id/dateBackground"
+        android:layout_width="109dp"
+        android:layout_height="111dp"
+        android:background="@drawable/custom_rounded_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ImageView
+        android:id="@+id/emptyPfpLogin5"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:src="@drawable/empty_profile_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ImageView
+        android:id="@+id/notificationIcon4"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:src="@drawable/notification_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
 
     <TextView
-        android:id="@+id/lineView2"
-        android:layout_width="337dp"
-        android:layout_height="49dp"
+        android:id="@+id/dateView2"
+        android:layout_width="135dp"
+        android:layout_height="31dp"
+        android:text="MON, OCT. 19"
+        android:textColor="#804000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/classflowLogo3"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:src="@drawable/classflow_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00804000"
+        android:fontFamily="sans-serif-black"
+        android:text="11 - ST. CARLO ACUTIS"
+        android:textColor="#804000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE"
+        android:textColor="#804000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/lineView"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
         android:background="@drawable/custom_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="18"
+        android:textColor="#804000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateBackground"
+        app:layout_constraintEnd_toEndOf="@+id/dateBackground"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dateBackground"
+        app:layout_constraintTop_toTopOf="@+id/dateBackground"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/dateName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUN"
+        android:textColor="#804000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateBackground"
+        app:layout_constraintEnd_toEndOf="@+id/dateBackground"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dateBackground"
+        app:layout_constraintTop_toTopOf="@+id/dateBackground"
+        app:layout_constraintVertical_bias="0.835" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="19"
+        android:textColor="#804000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateBackground2"
+        app:layout_constraintEnd_toEndOf="@+id/dateBackground2"
+        app:layout_constraintStart_toStartOf="@+id/dateBackground2"
+        app:layout_constraintTop_toTopOf="@+id/dateBackground2"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <TextView
+        android:id="@+id/dateName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MON"
+        android:textColor="#804000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateBackground2"
+        app:layout_constraintEnd_toEndOf="@+id/dateBackground2"
+        app:layout_constraintStart_toStartOf="@+id/dateBackground2"
+        app:layout_constraintTop_toTopOf="@+id/dateBackground2"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <TextView
+        android:id="@+id/date3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="20"
+        android:textColor="#804000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateBackground3"
+        app:layout_constraintEnd_toEndOf="@+id/dateBackground3"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/dateBackground3"
+        app:layout_constraintTop_toTopOf="@+id/dateBackground3"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <TextView
+        android:id="@+id/dateName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TUE"
+        android:textColor="#804000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateBackground3"
+        app:layout_constraintEnd_toEndOf="@+id/dateBackground3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dateBackground3"
+        app:layout_constraintTop_toTopOf="@+id/dateBackground3"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <TextView
+        android:id="@+id/scheduleBoard"
+        android:layout_width="380dp"
+        android:layout_height="388dp"
+        android:background="@drawable/custom_square"
+        android:backgroundTint="#06402B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <TextView
+        android:id="@+id/subject5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="81dp"
+        android:text="Effective Communication (Ms. Cruz)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/subject6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="49dp"
+        android:text="Mabisang Komunikasyon (Mr. Royulada)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/subject4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="116dp"
+        android:text="HEALTH BREAK"
+        android:textColor="#FD9F00"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="148dp"
+        android:text="General Science (Ms. Torrefranca)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="211dp"
+        android:text="Computer Programming (Mr. Sixson)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/subject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="219dp"
+        android:layout_marginBottom="179dp"
+        android:text="CLED 11-A (Mr. Barbero)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/subjectHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="250dp"
+        android:text="SUBJECT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/timePeriod10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="309dp"
+        android:layout_marginBottom="48dp"
+        android:text="4:20-5:10"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/timePeriod9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="309dp"
+        android:layout_marginBottom="80dp"
+        android:text="3:30-4:20"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/timePeriod8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="309dp"
+        android:layout_marginBottom="115dp"
+        android:text="3:10-3:30"
+        android:textColor="#FD9F00"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/timePeriod6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="309dp"
+        android:layout_marginBottom="147dp"
+        android:text="2:20-3:10"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/timePeriod4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="309dp"
+        android:layout_marginBottom="179dp"
+        android:text="1:30-2:20"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/dateHeader"
+        android:layout_width="377dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="322dp"
+        android:background="@drawable/custom_square_2"
         android:backgroundTint="#804000"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toTopOf="@+id/scheduleBoard" />
 
     <TextView
-        android:id="@+id/textView65"
+        android:id="@+id/scheduleBoardHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="704dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="DELA CRUZ, Juan - 11-St. Carlo Acutis"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.009" />
+        android:fontFamily="sans-serif-black"
+        android:text="MONDAY SCHEDULE"
+        android:textColor="#F6F6F6"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateHeader"
+        app:layout_constraintEnd_toEndOf="@+id/dateHeader"
+        app:layout_constraintStart_toStartOf="@+id/dateHeader"
+        app:layout_constraintTop_toTopOf="@+id/scheduleBoard" />
 
     <TextView
-        android:id="@+id/textView64"
-        android:layout_width="325dp"
-        android:layout_height="83dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SCHEDULE"
-        android:textColor="#804000"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126"
-        tools:text="SCHEDULE" />
-
-    <TextView
-        android:id="@+id/textView71"
-        android:layout_width="325dp"
-        android:layout_height="71dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SCHEDULE"
-        android:textColor="#804000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314"
-        tools:text="VIEW TODAY'S SCHEDULE" />
-
-    <TextView
-        android:id="@+id/textView72"
-        android:layout_width="66dp"
-        android:layout_height="73dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SCHEDULE"
-        android:textColor="#804000"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.429"
-        tools:text="13" />
-
-    <TextView
-        android:id="@+id/textView74"
-        android:layout_width="66dp"
-        android:layout_height="64dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SCHEDULE"
-        android:textColor="#804000"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426"
-        tools:text="15" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="65dp"
-        android:layout_height="39dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
-        app:srcCompat="@drawable/NotificationIcon" />
-
-    <TextView
-        android:id="@+id/textView63"
+        android:id="@+id/mainSchedule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="TextView"
-        android:textColor="#804000"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Wed, Oct 14" />
+        android:text="NOTE: Must be at school before 12:20."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader"
+        app:layout_constraintVertical_bias="0.036" />
 
     <TextView
-        android:id="@+id/textView73"
-        android:layout_width="65dp"
-        android:layout_height="66dp"
-        android:fontFamily="@font/fredoka_one"
-        android:text="SCHEDULE"
-        android:textColor="#804000"
-        android:textSize="60sp"
+        android:id="@+id/timeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="250dp"
+        android:text="TIME"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/timePeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="211dp"
+        android:text="12:40-1:30"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/scheduleBoard"
+        app:layout_constraintEnd_toEndOf="@+id/scheduleBoard"
+        app:layout_constraintStart_toStartOf="@+id/scheduleBoard"
+        app:layout_constraintTop_toBottomOf="@+id/dateHeader" />
+
+    <TextView
+        android:id="@+id/redirectShape"
+        android:layout_width="553dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="378dp"
+        android:background="@drawable/redirect_section"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425"
-        tools:text="14" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="81dp"
-        android:layout_height="95dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ClassFlowLogo" />
+        android:id="@+id/homeLogo"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/pixelated_house"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/bubbleChatView"
+        android:layout_width="49dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:src="@drawable/pixelated_bubble_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/notebookIcon2"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="229dp"
+        android:src="@drawable/pixelated_notebook"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pixelatedExamView2"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/pixelated_exam_paper"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <ImageView
+        android:id="@+id/calendarView2"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:src="@drawable/pixelated_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

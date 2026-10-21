@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD59B"
+    tools:context=".ProfileEditor">
+
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#654621"
+        android:text="SAVE EDITS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <TextView
+        android:id="@+id/nameEditorField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/firstNameEditorField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <TextView
+        android:id="@+id/passwordEditorField"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <ImageView
+        android:id="@+id/emptyPfpLogin4"
+        android:layout_width="297dp"
+        android:layout_height="268dp"
+        android:src="@drawable/empty_profile_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/notificationIcon3"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:src="@drawable/notification_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/dateView3"
+        android:layout_width="135dp"
+        android:layout_height="31dp"
+        android:text="MON, OCT. 19"
+        android:textColor="#804000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/classflowLogo2"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        android:src="@drawable/classflow_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/profilePictureEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit profile picture"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emptyPfpLogin4"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <TextView
+        android:id="@+id/nameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Edit last name"
+        android:textColor="#804000"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditorField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameEditorField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/firstNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Edit first name"
+        android:textColor="#804000"
+        app:layout_constraintBottom_toTopOf="@+id/firstNameEditorField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEditorField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit password"
+        android:textColor="#804000"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditorField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditorField"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.987" />
+
+    <TextView
+        android:id="@+id/redirectShape"
+        android:layout_width="553dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="378dp"
+        android:background="@drawable/redirect_section"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/pixelated_house"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/bubbleChatView"
+        android:layout_width="49dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="202dp"
+        android:src="@drawable/pixelated_bubble_chat"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/notebookIcon2"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="229dp"
+        android:src="@drawable/pixelated_notebook"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/pixelatedExamView2"
+        android:layout_width="75dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="337dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/pixelated_exam_paper"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <ImageView
+        android:id="@+id/calendarView2"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:src="@drawable/pixelated_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
+        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/redirectShape"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
