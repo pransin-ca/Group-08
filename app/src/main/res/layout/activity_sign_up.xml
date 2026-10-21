@@ -101,6 +101,7 @@
         android:id="@+id/userTypeSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="User Type (Type STUDENT or TEACHER. All caps)"
         android:textColor="#804000"
         app:layout_constraintBottom_toTopOf="@+id/userTypeSignUpField"
@@ -114,6 +115,7 @@
         android:id="@+id/studentID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="Student ID (If teacher, put email.)"
         android:textColor="#804000"
         app:layout_constraintBottom_toTopOf="@+id/studentIDSignUpField"
@@ -127,6 +129,7 @@
         android:id="@+id/passwordSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="Create password"
         android:textColor="#804000"
         app:layout_constraintBottom_toTopOf="@+id/passwordSignUpField"
@@ -140,6 +143,7 @@
         android:id="@+id/retypePasswordSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="Retype password"
         android:textColor="#804000"
         app:layout_constraintBottom_toTopOf="@+id/retypePasswordSignUpField"
@@ -160,5 +164,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.902" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/userTypeSignUpField"
+        app:layout_constraintEnd_toEndOf="@+id/userTypeSignUpField"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/userTypeSignUpField"
+        app:layout_constraintTop_toTopOf="@+id/userTypeSignUpField"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/studentIDSignUpField"
+        app:layout_constraintEnd_toEndOf="@+id/studentIDSignUpField"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/studentIDSignUpField"
+        app:layout_constraintTop_toTopOf="@+id/studentIDSignUpField"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordSignUpField"
+        app:layout_constraintEnd_toEndOf="@+id/passwordSignUpField"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/passwordSignUpField"
+        app:layout_constraintTop_toTopOf="@+id/passwordSignUpField"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/retypePasswordSignUpField"
+        app:layout_constraintEnd_toEndOf="@+id/retypePasswordSignUpField"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="@+id/retypePasswordSignUpField"
+        app:layout_constraintTop_toTopOf="@+id/retypePasswordSignUpField"
+        app:layout_constraintVertical_bias="0.47" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
