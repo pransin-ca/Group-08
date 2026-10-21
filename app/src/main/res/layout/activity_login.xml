@@ -183,4 +183,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.939" />
 
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField"
+        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField"
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/studentIDLoginField"
+        app:layout_constraintEnd_toEndOf="@+id/studentIDLoginField"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/studentIDLoginField"
+        app:layout_constraintTop_toTopOf="@+id/studentIDLoginField"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordLoginField"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLoginField"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginField"
+        app:layout_constraintTop_toTopOf="@+id/passwordLoginField"
+        app:layout_constraintVertical_bias="0.47" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
