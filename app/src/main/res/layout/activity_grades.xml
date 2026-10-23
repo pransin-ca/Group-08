@@ -110,31 +110,32 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:layout_height="31dp"
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="94"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="92"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="94"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="92.8"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -164,28 +165,28 @@
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="92"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="96"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="96"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="93.0"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -214,28 +215,28 @@
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="95"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="97"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="95"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="95.5"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -264,28 +265,28 @@
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="94"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="96"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="94"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="94.5"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -314,28 +315,28 @@
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="96"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="98"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="99"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="95.0"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -364,28 +365,28 @@
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="95"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="97"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="98"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="94.5"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -414,28 +415,28 @@
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="93"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="91"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="92"
                     android:textSize="12sp" />
 
                 <TextView
                     android:layout_margin="1dp"
                     android:background="#FFD59B"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="91.3"
                     android:textSize="12sp" />
             </TableRow>
 
@@ -457,7 +458,7 @@
                     android:background="#EFBF04"
                     android:fontFamily="sans-serif-black"
                     android:padding="6dp"
-                    android:text="-"
+                    android:text="95.4497"
                     android:textColor="#000000"
                     android:textSize="12sp"
                     android:textStyle="bold" />
