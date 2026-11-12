@@ -75,9 +75,9 @@
         android:fontFamily="sans-serif-black"
         android:text="Student ID (If teacher, put email.)"
         android:textColor="#804000"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintBottom_toTopOf="@+id/studentIDSignUpField"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
+        app:layout_constraintStart_toStartOf="@+id/studentIDSignUpField"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -110,7 +110,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#654621"
@@ -137,7 +137,7 @@
         app:layout_constraintVertical_bias="0.363" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/studentIDSignUpField"
         android:layout_width="325dp"
         android:layout_height="51dp"
         android:ems="10"
@@ -150,7 +150,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/createPwSignUpField"
         android:layout_width="323dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -164,7 +164,7 @@
         app:layout_constraintVertical_bias="0.632" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/retypePwSignUpField"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:ems="10"
