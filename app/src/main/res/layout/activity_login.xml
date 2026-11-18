@@ -8,219 +8,230 @@
     android:background="#FFD59B"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/userTypeLoginField"
-        android:layout_width="373dp"
-        android:layout_height="62dp"
-        android:background="@drawable/custom_rounded_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/classflowLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="ClassFlow Logo"
+        android:src="@drawable/classflow_logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <TextView
-        android:id="@+id/studentIDLoginField"
-        android:layout_width="373dp"
-        android:layout_height="62dp"
-        android:background="@drawable/custom_rounded_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
-
-    <TextView
-        android:id="@+id/passwordLoginField"
-        android:layout_width="373dp"
-        android:layout_height="62dp"
-        android:background="@drawable/custom_rounded_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/classflowWordmark"
-        android:layout_width="135dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
         android:text="ClassFlow"
         android:textColor="#804000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
-
-    <ImageView
-        android:id="@+id/classflowLogo"
-        android:layout_width="116dp"
-        android:layout_height="120dp"
-        android:src="@drawable/classflow_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/classflowLogo"
+        app:layout_constraintStart_toEndOf="@+id/classflowLogo"
+        app:layout_constraintTop_toTopOf="@+id/classflowLogo"
+        app:layout_constraintVertical_bias="0.49" />
 
     <TextView
         android:id="@+id/loginBoxGreeting"
-        android:layout_width="349dp"
-        android:layout_height="245dp"
+        android:layout_width="0dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/custom_square"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintTop_toBottomOf="@+id/classflowLogo" />
 
     <ImageView
         android:id="@+id/emptyPfpLogin"
-        android:layout_width="162dp"
-        android:layout_height="161dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Profile Picture"
         android:src="@drawable/empty_profile_picture"
-        app:layout_constraintBottom_toBottomOf="@+id/loginBoxGreeting"
         app:layout_constraintEnd_toEndOf="@+id/loginBoxGreeting"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/loginBoxGreeting"
-        app:layout_constraintTop_toTopOf="@+id/loginBoxGreeting"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintTop_toTopOf="@+id/loginBoxGreeting" />
 
     <TextView
         android:id="@+id/loginGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="WELCOME BACK!"
         android:textColor="#FFD59B"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/loginBoxGreeting"
+        android:textSize="26sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/loginBoxGreeting"
         app:layout_constraintStart_toStartOf="@+id/loginBoxGreeting"
-        app:layout_constraintTop_toTopOf="@+id/loginBoxGreeting"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintTop_toBottomOf="@+id/emptyPfpLogin" />
 
     <TextView
         android:id="@+id/dontHaveAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Don't have an account?"
         android:textColor="#D9AF85"
-        app:layout_constraintBottom_toBottomOf="@+id/loginBoxGreeting"
-        app:layout_constraintEnd_toEndOf="@+id/loginBoxGreeting"
-        app:layout_constraintHorizontal_bias="0.323"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/signUpRedirect"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/loginBoxGreeting"
-        app:layout_constraintTop_toTopOf="@+id/loginBoxGreeting"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintTop_toBottomOf="@+id/loginGreeting" />
 
     <TextView
         android:id="@+id/signUpRedirect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
         android:text=" Sign up."
         android:textColor="#FFFFFF"
-        android:textColorLink="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/loginBoxGreeting"
+        android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/loginBoxGreeting"
-        app:layout_constraintHorizontal_bias="0.708"
-        app:layout_constraintStart_toStartOf="@+id/loginBoxGreeting"
-        app:layout_constraintTop_toTopOf="@+id/loginBoxGreeting"
-        app:layout_constraintVertical_bias="0.836" />
+        app:layout_constraintStart_toEndOf="@+id/dontHaveAnAccount"
+        app:layout_constraintTop_toBottomOf="@+id/loginGreeting" />
 
+    <!-- User Type Field -->
     <TextView
         android:id="@+id/userTypeLogin"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="12dp"
         android:text="User Type (Type STUDENT or TEACHER. All caps)"
         android:textColor="#804000"
-        app:layout_constraintBottom_toTopOf="@+id/userTypeLoginField"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" />
-
-    <TextView
-        android:id="@+id/studentIDLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Student ID (If teacher, put email.)"
-        android:textColor="#804000"
-        app:layout_constraintBottom_toTopOf="@+id/studentIDLoginField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/studentIDLoginField"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.984" />
-
-    <TextView
-        android:id="@+id/passwordLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Enter password"
-        android:textColor="#804000"
-        app:layout_constraintBottom_toTopOf="@+id/passwordLoginField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/passwordLoginField"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="121dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#654621"
-        android:text="LOG IN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintTop_toBottomOf="@+id/loginBoxGreeting" />
+
+    <TextView
+        android:id="@+id/userTypeLoginField"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeLogin" />
 
     <EditText
         android:id="@+id/userTypeLoginField2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
         android:ems="10"
-        android:hint="Name"
+        android:hint="STUDENT or TEACHER"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField"
         app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField"
-        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="@+id/userTypeLoginField"
-        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField" />
+
+    <!-- Student ID Field -->
+    <TextView
+        android:id="@+id/studentIDLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Student ID (If teacher, put email.)"
+        android:textColor="#804000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTypeLoginField" />
+
+    <TextView
+        android:id="@+id/studentIDLoginField"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentIDLogin" />
 
     <EditText
         android:id="@+id/studentIDLoginField2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="ID or Email"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="@+id/studentIDLoginField"
         app:layout_constraintEnd_toEndOf="@+id/studentIDLoginField"
-        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="@+id/studentIDLoginField"
-        app:layout_constraintTop_toTopOf="@+id/studentIDLoginField"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintTop_toTopOf="@+id/studentIDLoginField" />
+
+    <!-- Password Field -->
+    <TextView
+        android:id="@+id/passwordLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Enter password"
+        android:textColor="#804000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentIDLoginField" />
+
+    <TextView
+        android:id="@+id/passwordLoginField"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLogin" />
 
     <EditText
         android:id="@+id/passwordLoginField2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="@+id/passwordLoginField"
         app:layout_constraintEnd_toEndOf="@+id/passwordLoginField"
-        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="@+id/passwordLoginField"
-        app:layout_constraintTop_toTopOf="@+id/passwordLoginField"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintTop_toTopOf="@+id/passwordLoginField" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#654621"
+        android:text="LOG IN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginField" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

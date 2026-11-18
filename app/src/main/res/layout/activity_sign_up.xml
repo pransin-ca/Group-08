@@ -89,9 +89,9 @@
         android:fontFamily="sans-serif-black"
         android:text="Create password"
         android:textColor="#804000"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/createPwSignUpField"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/createPwSignUpField"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -104,9 +104,9 @@
         android:fontFamily="sans-serif-black"
         android:text="Retype password"
         android:textColor="#804000"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+        app:layout_constraintBottom_toTopOf="@+id/retypePwSignUpField"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword3"
+        app:layout_constraintStart_toStartOf="@+id/retypePwSignUpField"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -177,5 +177,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.775" />
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? "
+        android:textColor="#7A572F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <TextView
+        android:id="@+id/loginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in."
+        android:textColor="#9E6868"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

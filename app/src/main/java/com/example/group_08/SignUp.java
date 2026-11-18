@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUp extends AppCompatActivity {
 
     private EditText userType, studentID, enterPassword, retypePassword;
     private Button signUpButton;
+
+    private TextView loginRedirect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,7 @@ public class SignUp extends AppCompatActivity {
         enterPassword  = findViewById(R.id.createPwSignUpField);
         retypePassword = findViewById(R.id.retypePwSignUpField);
         signUpButton   = findViewById(R.id.signUpButton);
+        loginRedirect  = findViewById(R.id.loginRedirect);
 
         signUpButton.setOnClickListener(v -> {
             String type       = userType.getText().toString().trim();
@@ -56,6 +60,11 @@ public class SignUp extends AppCompatActivity {
 
             startActivity(new Intent(SignUp.this, Dashboard.class));
             finish();
+
         });
+
+        loginRedirect.setOnClickListener(v ->
+                startActivity(new Intent(SignUp.this, Login.class))
+        );
     }
 }

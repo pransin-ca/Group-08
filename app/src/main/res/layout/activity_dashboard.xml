@@ -8,443 +8,460 @@
     android:background="#FFD59B"
     tools:context=".Dashboard">
 
-    <TextView
-        android:id="@+id/userTypeLoginField2"
-        android:layout_width="376dp"
-        android:layout_height="101dp"
-        android:background="@drawable/custom_rounded_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
-
-    <ImageView
-        android:id="@+id/emptyPfpLogin3"
-        android:layout_width="150dp"
-        android:layout_height="149dp"
-        android:src="@drawable/empty_profile_picture"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
-
-    <ImageView
-        android:id="@+id/emptyPfpLogin2"
-        android:layout_width="56dp"
-        android:layout_height="52dp"
-        android:src="@drawable/empty_profile_picture"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+    <!-- Top Bar: Logo, Date, Notifications -->
 
     <ImageView
         android:id="@+id/classflowLogo"
-        android:layout_width="100dp"
-        android:layout_height="107dp"
+        android:layout_width="121dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="ClassFlow Logo"
         android:src="@drawable/classflow_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Profile Section -->
+
+    <!-- Announcement Card -->
 
     <TextView
         android:id="@+id/dateView"
-        android:layout_width="135dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
         android:text="MON, OCT. 19"
         android:textColor="#804000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/classflowLogo"
+        app:layout_constraintTop_toTopOf="@+id/classflowLogo" />
 
     <ImageView
         android:id="@+id/notificationIcon"
-        android:layout_width="45dp"
-        android:layout_height="35dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Notifications"
         android:src="@drawable/notification_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintTop_toTopOf="@+id/classflowLogo" />
 
     <ImageView
-        android:id="@+id/notificationIcon2"
-        android:layout_width="73dp"
-        android:layout_height="68dp"
-        android:src="@drawable/notification_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
-        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField2"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
-        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
-        app:layout_constraintVertical_bias="0.454" />
+        android:id="@+id/emptyPfpLogin3"
+        android:layout_width="135dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="Profile Picture"
+        android:src="@drawable/empty_profile_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classflowLogo" />
 
     <TextView
         android:id="@+id/nameView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-black"
         android:text="DELA CRUZ, JUAN"
         android:textColor="#804000"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
-        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
-
-    <TextView
-        android:id="@+id/announcementHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="37dp"
-        android:fontFamily="sans-serif-black"
-        android:text="4 new announcements!"
-        android:textColor="#804000"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
-        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField2"
-        app:layout_constraintHorizontal_bias="0.785"
-        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
-        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/emptyPfpLogin3"
+        app:layout_constraintTop_toTopOf="@+id/emptyPfpLogin3" />
 
     <TextView
         android:id="@+id/sectionView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-medium"
         android:text="11 - ICT - St. Carlo Acutis"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/emptyPfpLogin3"
+        app:layout_constraintTop_toBottomOf="@+id/nameView" />
 
     <TextView
         android:id="@+id/editProfileOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
         android:text="Edit profile"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/emptyPfpLogin3"
+        app:layout_constraintTop_toBottomOf="@+id/sectionView" />
+
+    <TextView
+        android:id="@+id/userTypeLoginField2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_rounded_square"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="@+id/emptyPfpLogin3"
-        app:layout_constraintTop_toTopOf="@+id/emptyPfpLogin3"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emptyPfpLogin3" />
+
+    <ImageView
+        android:id="@+id/notificationIcon2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Announcement Icon"
+        android:src="@drawable/notification_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
+        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2" />
+
+    <TextView
+        android:id="@+id/announcementHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="4 new announcements!"
+        android:textColor="#804000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/announcementViewer"
+        app:layout_constraintStart_toEndOf="@+id/notificationIcon2"
+        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/announcementViewer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Click here to view all."
+        android:textColor="#553311"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/userTypeLoginField2"
-        app:layout_constraintEnd_toEndOf="@+id/userTypeLoginField2"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="@+id/userTypeLoginField2"
-        app:layout_constraintTop_toTopOf="@+id/userTypeLoginField2"
-        app:layout_constraintVertical_bias="0.621" />
+        app:layout_constraintStart_toEndOf="@+id/notificationIcon2"
+        app:layout_constraintTop_toBottomOf="@+id/announcementHeader" />
+
+    <!-- Search Bar -->
 
     <TextView
         android:id="@+id/searchEngine"
-        android:layout_width="360dp"
-        android:layout_height="35dp"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/searchbar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintTop_toBottomOf="@+id/userTypeLoginField2" />
 
     <ImageView
         android:id="@+id/magnifyingLens"
-        android:layout_width="17dp"
-        android:layout_height="18dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="Search Icon"
         android:src="@drawable/search_icon"
         app:layout_constraintBottom_toBottomOf="@+id/searchEngine"
-        app:layout_constraintEnd_toEndOf="@+id/searchEngine"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="@+id/searchEngine"
-        app:layout_constraintTop_toTopOf="@+id/searchEngine"
-        app:layout_constraintVertical_bias="0.411" />
+        app:layout_constraintTop_toTopOf="@+id/searchEngine" />
 
     <TextView
         android:id="@+id/searchbarTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="Looking for something?"
         android:textColor="#000000"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/searchEngine"
-        app:layout_constraintEnd_toEndOf="@+id/searchEngine"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toStartOf="@+id/searchEngine"
-        app:layout_constraintTop_toTopOf="@+id/searchEngine"
-        app:layout_constraintVertical_bias="0.437" />
+        app:layout_constraintStart_toEndOf="@+id/magnifyingLens"
+        app:layout_constraintTop_toTopOf="@+id/searchEngine" />
 
+    <!-- Main Content Background Area -->
     <TextView
         android:id="@+id/dashboardBackground"
-        android:layout_width="678dp"
-        android:layout_height="434dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="310dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/custom_square"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/redirectShape"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.964" />
+        app:layout_constraintTop_toBottomOf="@+id/searchEngine"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/dashboardHeader"
-        android:layout_width="374dp"
-        android:layout_height="59dp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/custom_rounded_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
-
-    <TextView
-        android:id="@+id/subjectBackground"
-        android:layout_width="376dp"
-        android:layout_height="115dp"
-        android:background="@drawable/custom_rounded_square"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintEnd_toEndOf="@+id/dashboardBackground"
+        app:layout_constraintStart_toStartOf="@+id/dashboardBackground"
+        app:layout_constraintTop_toTopOf="@+id/dashboardBackground" />
 
     <TextView
         android:id="@+id/dashboardHeaderTitle"
-        android:layout_width="219dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="MOST USED"
         android:textColor="#804000"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/dashboardHeader"
         app:layout_constraintEnd_toEndOf="@+id/dashboardHeader"
-        app:layout_constraintHorizontal_bias="0.587"
         app:layout_constraintStart_toStartOf="@+id/dashboardHeader"
-        app:layout_constraintTop_toTopOf="@+id/dashboardHeader"
-        app:layout_constraintVertical_bias="0.409" />
+        app:layout_constraintTop_toTopOf="@+id/dashboardHeader" />
+
+    <!-- Subjects Card -->
+    <TextView
+        android:id="@+id/subjectBackground"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_rounded_square"
+        app:layout_constraintEnd_toEndOf="@+id/dashboardBackground"
+        app:layout_constraintStart_toStartOf="@+id/dashboardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardHeader" />
 
     <ImageView
         android:id="@+id/notebookIcon"
-        android:layout_width="116dp"
-        android:layout_height="119dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="12dp"
-        android:layout_marginEnd="245dp"
+        android:contentDescription="Notebook Icon"
         android:src="@drawable/pixelated_notebook"
         app:layout_constraintBottom_toBottomOf="@+id/subjectBackground"
-        app:layout_constraintEnd_toEndOf="@+id/subjectBackground"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/subjectBackground"
-        app:layout_constraintTop_toTopOf="@+id/subjectBackground"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/subjectBackground" />
 
     <TextView
         android:id="@+id/subjectTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:fontFamily="sans-serif-black"
         android:text="SUBJECTS"
         android:textColor="#804000"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/subjectBackground"
-        app:layout_constraintEnd_toEndOf="@+id/subjectBackground"
-        app:layout_constraintHorizontal_bias="0.814"
-        app:layout_constraintStart_toStartOf="@+id/subjectBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/subjectsSubText"
+        app:layout_constraintStart_toEndOf="@+id/notebookIcon"
         app:layout_constraintTop_toTopOf="@+id/subjectBackground"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/subjectsSubText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="View all your subjects."
+        android:textColor="#553311"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/subjectBackground"
-        app:layout_constraintEnd_toEndOf="@+id/subjectBackground"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="@+id/subjectBackground"
-        app:layout_constraintTop_toTopOf="@+id/subjectBackground"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintStart_toEndOf="@+id/notebookIcon"
+        app:layout_constraintTop_toBottomOf="@+id/subjectTextView" />
 
+    <!-- Grades, Schedule & Quizzes Cards (3 Columns) -->
     <TextView
         android:id="@+id/gradesBackground"
-        android:layout_width="143dp"
-        android:layout_height="121dp"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
         android:background="@drawable/custom_rs_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
-
-    <TextView
-        android:id="@+id/scheduleBackground"
-        android:layout_width="143dp"
-        android:layout_height="121dp"
-        android:background="@drawable/custom_rs_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.828"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.889" />
+        app:layout_constraintEnd_toStartOf="@+id/scheduleBackground"
+        app:layout_constraintStart_toStartOf="@+id/dashboardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/subjectBackground" />
 
     <ImageView
         android:id="@+id/pixelatedExamView"
-        android:layout_width="106dp"
-        android:layout_height="103dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Exam Paper Icon"
         android:src="@drawable/pixelated_exam_paper"
-        app:layout_constraintBottom_toBottomOf="@+id/gradesBackground"
+        app:layout_constraintBottom_toTopOf="@+id/gradesText"
         app:layout_constraintEnd_toEndOf="@+id/gradesBackground"
-        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="@+id/gradesBackground"
         app:layout_constraintTop_toTopOf="@+id/gradesBackground"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/gradesText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:text="GRADES"
-        android:textSize="20sp"
+        android:textColor="#804000"
+        android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/gradesBackground"
         app:layout_constraintEnd_toEndOf="@+id/gradesBackground"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/gradesBackground"
-        app:layout_constraintTop_toTopOf="@+id/gradesBackground"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintTop_toBottomOf="@+id/pixelatedExamView" />
+
+    <TextView
+        android:id="@+id/scheduleBackground"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/custom_rs_2"
+        app:layout_constraintEnd_toStartOf="@+id/quizzesBackground"
+        app:layout_constraintStart_toEndOf="@+id/gradesBackground"
+        app:layout_constraintTop_toTopOf="@+id/gradesBackground" />
 
     <ImageView
         android:id="@+id/calendarView"
-        android:layout_width="86dp"
-        android:layout_height="68dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Calendar Icon"
         android:src="@drawable/pixelated_calendar"
-        app:layout_constraintBottom_toBottomOf="@+id/scheduleBackground"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="@+id/scheduleBackground"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/scheduleBackground"
         app:layout_constraintTop_toTopOf="@+id/scheduleBackground"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:text="SCHEDULE"
-        android:textSize="20sp"
+        android:textColor="#804000"
+        android:textSize="13sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/scheduleBackground"
         app:layout_constraintEnd_toEndOf="@+id/scheduleBackground"
-        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="@+id/scheduleBackground"
-        app:layout_constraintTop_toTopOf="@+id/scheduleBackground"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
     <TextView
+        android:id="@+id/quizzesBackground"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_rs_2"
+        app:layout_constraintEnd_toEndOf="@+id/dashboardBackground"
+        app:layout_constraintStart_toEndOf="@+id/scheduleBackground"
+        app:layout_constraintTop_toTopOf="@+id/gradesBackground" />
+
+    <ImageView
+        android:id="@+id/quizzesIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Quizzes Icon"
+        android:src="@drawable/pixelated_bubble_chat"
+        app:layout_constraintBottom_toTopOf="@+id/quizzesText"
+        app:layout_constraintEnd_toEndOf="@+id/quizzesBackground"
+        app:layout_constraintStart_toStartOf="@+id/quizzesBackground"
+        app:layout_constraintTop_toTopOf="@+id/quizzesBackground"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/quizzesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="QUIZZES"
+        android:textColor="#804000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/quizzesBackground"
+        app:layout_constraintEnd_toEndOf="@+id/quizzesBackground"
+        app:layout_constraintStart_toStartOf="@+id/quizzesBackground"
+        app:layout_constraintTop_toBottomOf="@+id/quizzesIcon" />
+
+    <!-- Bottom Navigation Bar -->
+    <TextView
         android:id="@+id/redirectShape"
-        android:layout_width="553dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginTop="378dp"
         android:background="@drawable/redirect_section"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/navHome"
         android:layout_width="38dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="6dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="Home"
         android:src="@drawable/pixelated_house"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintEnd_toStartOf="@+id/navChat"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navChat"
-        android:layout_width="49dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="202dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Chat"
         android:src="@drawable/pixelated_bubble_chat"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/navSubjects"
+        app:layout_constraintStart_toEndOf="@+id/navHome"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navSubjects"
-        android:layout_width="67dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="257dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="229dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Subjects"
         android:src="@drawable/pixelated_notebook"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/navGrades"
+        app:layout_constraintStart_toEndOf="@+id/navChat"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navGrades"
-        android:layout_width="75dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="337dp"
-        android:layout_marginEnd="141dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Grades"
         android:src="@drawable/pixelated_exam_paper"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintEnd_toStartOf="@+id/navSchedule"
+        app:layout_constraintStart_toEndOf="@+id/navSubjects"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navSchedule"
-        android:layout_width="55dp"
-        android:layout_height="42dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="Schedule"
         android:src="@drawable/pixelated_calendar"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
         app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toEndOf="@+id/navGrades"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

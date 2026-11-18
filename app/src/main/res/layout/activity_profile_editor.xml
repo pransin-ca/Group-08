@@ -173,87 +173,73 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.987" />
 
+    <!-- Bottom Navigation Bar -->
     <TextView
         android:id="@+id/redirectShape"
-        android:layout_width="553dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginTop="378dp"
         android:background="@drawable/redirect_section"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.654"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/navHome"
         android:layout_width="38dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="6dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="Home"
         android:src="@drawable/pixelated_house"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintEnd_toStartOf="@+id/navChat"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navChat"
-        android:layout_width="49dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="202dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Chat"
         android:src="@drawable/pixelated_bubble_chat"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/navSubjects"
+        app:layout_constraintStart_toEndOf="@+id/navHome"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navSubjects"
-        android:layout_width="67dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="257dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="229dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Subjects"
         android:src="@drawable/pixelated_notebook"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/navGrades"
+        app:layout_constraintStart_toEndOf="@+id/navChat"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navGrades"
-        android:layout_width="75dp"
-        android:layout_height="77dp"
-        android:layout_marginStart="337dp"
-        android:layout_marginEnd="141dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="Grades"
         android:src="@drawable/pixelated_exam_paper"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
-        app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintEnd_toStartOf="@+id/navSchedule"
+        app:layout_constraintStart_toEndOf="@+id/navSubjects"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <ImageView
         android:id="@+id/navSchedule"
-        android:layout_width="55dp"
-        android:layout_height="42dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="Schedule"
         android:src="@drawable/pixelated_calendar"
         app:layout_constraintBottom_toBottomOf="@+id/redirectShape"
         app:layout_constraintEnd_toEndOf="@+id/redirectShape"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintStart_toStartOf="@+id/redirectShape"
-        app:layout_constraintTop_toTopOf="@+id/redirectShape"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toEndOf="@+id/navGrades"
+        app:layout_constraintTop_toTopOf="@+id/redirectShape" />
 
     <EditText
         android:id="@+id/passwordEditor"
