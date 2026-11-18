@@ -1,24 +1,31 @@
 package com.example.group_08;
 
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
+import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import android.content.Intent;
 
 public class Dashboard extends AppCompatActivity {
+
+    private ImageView navHome, navChat, navSubjects, navGrades, navSchedule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_dashboard);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        navHome          = findViewById(R.id.navHome);
+        navChat          = findViewById(R.id.navChat);
+        navSubjects      = findViewById(R.id.navSubjects);
+        navGrades        = findViewById(R.id.navGrades);
+        navSchedule      = findViewById(R.id.navSchedule);
+
+        navGrades.setOnClickListener(v -> {
+            startActivity(new Intent(Dashboard.this, Grades.class));
+        });
+
+        navSchedule.setOnClickListener(view -> {
+            startActivity(new Intent(Dashboard.this, Schedule.class));
         });
     }
 }

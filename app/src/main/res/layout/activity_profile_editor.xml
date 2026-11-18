@@ -187,7 +187,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/homeLogo"
+        android:id="@+id/navHome"
         android:layout_width="38dp"
         android:layout_height="43dp"
         android:layout_marginBottom="6dp"
@@ -200,7 +200,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <ImageView
-        android:id="@+id/bubbleChatView"
+        android:id="@+id/navChat"
         android:layout_width="49dp"
         android:layout_height="52dp"
         android:layout_marginStart="185dp"
@@ -215,7 +215,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/notebookIcon2"
+        android:id="@+id/navSubjects"
         android:layout_width="67dp"
         android:layout_height="54dp"
         android:layout_marginStart="257dp"
@@ -230,7 +230,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/pixelatedExamView2"
+        android:id="@+id/navGrades"
         android:layout_width="75dp"
         android:layout_height="77dp"
         android:layout_marginStart="337dp"
@@ -244,7 +244,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <ImageView
-        android:id="@+id/calendarView2"
+        android:id="@+id/navSchedule"
         android:layout_width="55dp"
         android:layout_height="42dp"
         android:src="@drawable/pixelated_calendar"
@@ -256,7 +256,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/editTextTextPassword4"
+        android:id="@+id/passwordEditor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -269,7 +269,7 @@
         app:layout_constraintVertical_bias="0.529" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/surnameEditor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -283,7 +283,7 @@
         app:layout_constraintVertical_bias="0.529" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/firstNameEditor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
