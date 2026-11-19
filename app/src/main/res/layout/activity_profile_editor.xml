@@ -8,12 +8,30 @@
     android:background="#FFD59B"
     tools:context=".ProfileEditor">
 
+    <TextView
+        android:id="@+id/dateView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="MON, OCT. 19"
+        android:textColor="#804000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
     <Button
         android:id="@+id/loginButton2"
         android:layout_width="121dp"
         android:layout_height="50dp"
         android:backgroundTint="#654621"
         android:text="SAVE EDITS"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -30,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.522" />
 
     <TextView
         android:id="@+id/firstNameEditorField"
@@ -39,9 +57,10 @@
         android:background="@drawable/custom_rounded_square"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.653" />
 
     <TextView
         android:id="@+id/passwordEditorField"
@@ -56,15 +75,15 @@
 
     <ImageView
         android:id="@+id/emptyPfpLogin4"
-        android:layout_width="297dp"
-        android:layout_height="268dp"
+        android:layout_width="234dp"
+        android:layout_height="225dp"
         android:src="@drawable/empty_profile_picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.21" />
 
     <ImageView
         android:id="@+id/emptyPfpLogin8"
@@ -73,10 +92,10 @@
         android:src="@drawable/empty_profile_picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <ImageView
         android:id="@+id/notificationIcon3"
@@ -85,24 +104,10 @@
         android:src="@drawable/notification_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
-
-    <TextView
-        android:id="@+id/dateView3"
-        android:layout_width="135dp"
-        android:layout_height="31dp"
-        android:text="MON, OCT. 19"
-        android:textColor="#804000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <ImageView
         android:id="@+id/classflowLogo2"
@@ -114,20 +119,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/profilePictureEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit profile picture"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/emptyPfpLogin4"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <TextView
         android:id="@+id/nameEditText"
@@ -260,7 +266,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:hint="Surname"
         app:layout_constraintBottom_toBottomOf="@+id/nameEditorField"
         app:layout_constraintEnd_toEndOf="@+id/nameEditorField"
         app:layout_constraintHorizontal_bias="0.098"
@@ -274,7 +280,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:hint="First name"
         app:layout_constraintBottom_toBottomOf="@+id/firstNameEditorField"
         app:layout_constraintEnd_toEndOf="@+id/firstNameEditorField"
         app:layout_constraintHorizontal_bias="0.098"

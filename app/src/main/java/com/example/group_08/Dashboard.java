@@ -9,7 +9,7 @@ import android.content.Intent;
 public class Dashboard extends AppCompatActivity {
 
     private ImageView navHome, navChat, navSubjects, navGrades, navSchedule;
-    private TextView gradesBackground, scheduleBackground, quizzesBackground, subjectBackground;
+    private TextView gradesBackground, scheduleBackground, quizzesBackground, subjectBackground, editProfileOption;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class Dashboard extends AppCompatActivity {
         scheduleBackground = findViewById(R.id.scheduleBackground);
         quizzesBackground = findViewById(R.id.quizzesBackground);
         subjectBackground = findViewById(R.id.subjectBackground);
+        editProfileOption = findViewById(R.id.editProfileOption);
 
         gradesBackground.setOnClickListener(v -> {
             startActivity(new Intent(Dashboard.this, Grades.class));
@@ -44,6 +45,10 @@ public class Dashboard extends AppCompatActivity {
 
         quizzesBackground.setOnClickListener(v -> {
             startActivity(new Intent(Dashboard.this, Quizzes.class));
+        });
+
+        editProfileOption.setOnClickListener(v -> {
+            startActivity(new Intent(Dashboard.this, ProfileEditor.class));
         });
     }
 }
