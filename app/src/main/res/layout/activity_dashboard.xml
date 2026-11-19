@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
         android:text="MON, OCT. 19"
         android:textColor="#804000"
         android:textSize="24sp"
@@ -50,10 +51,10 @@
 
     <ImageView
         android:id="@+id/emptyPfpLogin3"
-        android:layout_width="135dp"
-        android:layout_height="148dp"
+        android:layout_width="147dp"
+        android:layout_height="178dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="Profile Picture"
         android:src="@drawable/empty_profile_picture"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +65,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-black"
         android:text="DELA CRUZ, JUAN"
@@ -108,7 +109,7 @@
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_rounded_square"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,7 +161,7 @@
         android:layout_width="0dp"
         android:layout_height="36dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/searchbar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -192,31 +193,34 @@
         app:layout_constraintTop_toTopOf="@+id/searchEngine" />
 
     <!-- Main Content Background Area -->
+
     <TextView
         android:id="@+id/dashboardBackground"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:minHeight="310dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_square"
+        android:minHeight="310dp"
         app:layout_constraintBottom_toTopOf="@+id/redirectShape"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchEngine"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.58" />
 
     <TextView
         android:id="@+id/dashboardHeader"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_rounded_square"
         app:layout_constraintEnd_toEndOf="@+id/dashboardBackground"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/dashboardBackground"
         app:layout_constraintTop_toTopOf="@+id/dashboardBackground" />
 
@@ -234,15 +238,17 @@
         app:layout_constraintTop_toTopOf="@+id/dashboardHeader" />
 
     <!-- Subjects Card -->
+
     <TextView
         android:id="@+id/subjectBackground"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/custom_rounded_square"
         app:layout_constraintEnd_toEndOf="@+id/dashboardBackground"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/dashboardBackground"
         app:layout_constraintTop_toBottomOf="@+id/dashboardHeader" />
 
@@ -284,12 +290,13 @@
         app:layout_constraintTop_toBottomOf="@+id/subjectTextView" />
 
     <!-- Grades, Schedule & Quizzes Cards (3 Columns) -->
+
     <TextView
         android:id="@+id/gradesBackground"
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="6dp"
         android:background="@drawable/custom_rs_2"
         app:layout_constraintEnd_toStartOf="@+id/scheduleBackground"
@@ -375,7 +382,7 @@
         android:layout_width="38dp"
         android:layout_height="38dp"
         android:contentDescription="Quizzes Icon"
-        android:src="@drawable/pixelated_bubble_chat"
+        android:src="@drawable/bg_remove_pencil"
         app:layout_constraintBottom_toTopOf="@+id/quizzesText"
         app:layout_constraintEnd_toEndOf="@+id/quizzesBackground"
         app:layout_constraintStart_toStartOf="@+id/quizzesBackground"

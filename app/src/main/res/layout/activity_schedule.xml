@@ -9,11 +9,12 @@
     tools:context=".Schedule">
 
     <!-- Top Profile & Header -->
+
     <ImageView
         android:id="@+id/classflowLogo3"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:contentDescription="ClassFlow Logo"
         android:src="@drawable/classflow_logo"
@@ -24,11 +25,12 @@
         android:id="@+id/dateView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
         android:text="MON, OCT. 19"
         android:textColor="#804000"
-        android:textSize="14sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/classflowLogo3"
         app:layout_constraintTop_toTopOf="@+id/classflowLogo3" />
 
@@ -36,7 +38,7 @@
         android:id="@+id/emptyPfpLogin5"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="Profile Picture"
         android:src="@drawable/empty_profile_picture"
@@ -55,16 +57,18 @@
         app:layout_constraintTop_toTopOf="@+id/emptyPfpLogin5" />
 
     <!-- Class Title -->
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="sans-serif-black"
         android:text="11 - ST. CARLO ACUTIS"
         android:textColor="#804000"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/classflowLogo3" />
 
